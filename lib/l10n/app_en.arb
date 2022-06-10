@@ -1,0 +1,781 @@
+{
+    "gender_select_male": "Male",
+    "gender_select_female": "Female",
+    "gender_select_not_selected": "Not selected",
+    "lbl_edit_birthday": "Your birthday",
+    "@lbl_edit_birthday": {
+        "description": "Your birthday"
+    },
+    "tle_add_new_address": "Add New Address",
+    "@tle_add_new_address": {
+        "description": "Add New Address"
+    },
+    "hnt_address": "Address(House, Building, Area etc)",
+    "@hnt_address": {
+        "description": "Address(House, Building, Area etc)"
+    },
+    "hnt_near_landmark": "Nearest Landmark",
+    "@hnt_near_landmark": {
+        "description": "Nearest Landmark"
+    },
+    "hnt_pincode": "Pincode",
+    "@hnt_pincode": {
+        "description": "Pincode"
+    },
+    "hnt_country": "Country",
+    "@hnt_country": {
+        "description": "Country"
+    },
+    "hnt_state": "State",
+    "@hnt_state": {
+        "description": "State"
+    },
+    "hnt_city_district": "City/ District",
+    "@hnt_city_district": {
+        "description": "City/ District"
+    },
+    "lbl_save_address": "Save Address as",
+    "@lbl_save_address": {
+        "description": "Save Address as"
+    },
+    "txt_home": "Home",
+    "@txt_home": {
+        "description": "Home"
+    },
+    "txt_office": "Office",
+    "@txt_office": {
+        "description": "Office"
+    },
+    "txt_others": "Others",
+    "@txt_others": {
+        "description": "Others"
+    },
+    "txt_default_address": "Save as default address",
+    "@txt_default_address": {
+        "description": "Save as default address"
+    },
+    "btn_save_address": "Save Address",
+    "@btn_save_address": {
+        "description": "Save Address"
+    },
+    "txt_default_payment_option": "Save as default payment option",
+    "@txt_default_payment_option": {
+        "description": "Save as default payment option"
+    },
+    "lbl_credit_debit_card": "Credit / Debit Card",
+    "@lbl_credit_debit_card": {
+        "description": "Credit / Debit Card"
+    },
+    "hnt_card_number": "Card Number",
+    "@hnt_card_number": {
+        "description": "Card Number"
+    },
+    "hnt_name_card": "Name on the Card",
+    "@hnt_name_card": {
+        "description": "Name on the Card"
+    },
+    "hnt_valid_through": "Valid Thru (MM/YY)",
+    "@hnt_valid_through": {
+        "description": "Valid Thru (MM/YY)"
+    },
+    "hnt_cvv": "CVV",
+    "@hnt_cvv": {
+        "description": "CVV"
+    },
+    "lbl_COD": "Cash on Delivery",
+    "@lbl_COD": {
+        "description": "Cash on Delivery"
+    },
+    "lbl_upi_option": "PhonePe / Google Pay / UPI",
+    "@lbl_upi_option": {
+        "description": "PhonePe / Google Pay / UPI"
+    },
+    "lbl_wallet_option": "PayTM / Wallets",
+    "@lbl_wallet_option": {
+        "description": "PayTM / Wallets"
+    },
+    "lbl_netbanking": "Net Banking",
+    "@lbl_netbanking": {
+        "description": "Net Banking"
+    },
+    "btn_payment_option": "Save Payment Option",
+    "@btn_payment_option": {
+        "description": "Save Payment Option"
+    },
+    "tle_add_new_payment": "Add New Payment",
+    "@tle_add_new_payment": {
+        "description": "Add New Payment"
+    },
+    "tle_my_address": "My Address",
+    "@tle_my_address": {
+        "description": "My Address"
+    },
+    "tle_all_category": "All Categories",
+    "@tle_all_category": {
+        "description": "All Categories"
+    },
+    "txt_from": "From",
+    "@txt_from": {
+        "description": "From"
+    },
+    "txt_cart": "Cart",
+    "@txt_cart": {
+        "description": "Cart"
+    },
+    "txt_address": "Address",
+    "@txt_address": {
+        "description": "Address"
+    },
+    "txt_time": "Time",
+    "@txt_time": {
+        "description": "Time"
+    },
+    "txt_payment": "Payment",
+    "@txt_payment": {
+        "description": "Payment"
+    },
+    "txt_shopping_cart": "Shopping Cart",
+    "@txt_shopping_cart": {
+        "description": "Shopping Cart"
+    },
+    "btn_proceed_to_checkout": "Proceed to Checkout",
+    "@btn_proceed_to_checkout": {
+        "description": "Proceed to Checkout"
+    },
+    "btn_proceed_to_select_time": "Proceed to Select Time Slot",
+    "@btn_proceed_to_select_time": {
+        "description": "Proceed to Select Time Slot"
+    },
+    "txt_proceed_to_pay": "Proceed to Pay",
+    "@txt_proceed_to_pay": {
+        "description": "Proceed to Pay"
+    },
+    "btn_make_payment": "Make Payment",
+    "@btn_make_payment": {
+        "description": "Make Payment"
+    },
+    "txt_off": "Off",
+    "@txt_off": {
+        "description": "Off"
+    },
+    "txt_ratings": "Ratings",
+    "@txt_ratings": {
+        "description": "Ratings"
+    },
+    "lbl_price_details": "Price Details",
+    "@lbl_price_details": {
+        "description": "Price Details"
+    },
+    "txt_total_price": "Total Price",
+    "@txt_total_price": {
+        "description": "Total Price"
+    },
+    "txt_discount_price": "Discount on Price",
+    "@txt_discount_price": {
+        "description": "Discount on Price"
+    },
+    "txt_coupon_discount": "Coupon Discount",
+    "@txt_coupon_discount": {
+        "description": "Coupon Discount"
+    },
+    "txt_apply_coupon": "Apply Coupon",
+    "@txt_apply_coupon": {
+        "description": "Apply Coupon"
+    },
+    "txt_delivery_charges": "Delivery Charges",
+    "@txt_delivery_charges": {
+        "description": "Delivery Charges"
+    },
+    "lbl_total_amount": "Total Amount",
+    "@lbl_total_amount": {
+        "description": "Total Amount"
+    },
+    "btn_add_new_address": "Add new Address",
+    "@btn_add_new_address": {
+        "description": "Add new Address"
+    },
+    "lbl_select_date": "Select Date",
+    "@lbl_select_date": {
+        "description": "Select Date"
+    },
+    "lbl_select_time_slot": "Select Time Slot",
+    "@lbl_select_time_slot": {
+        "description": "Select Time Slot"
+    },
+    "txt_mention_time": "Mention Specific Time",
+    "@txt_mention_time": {
+        "description": "Mention Specific Time"
+    },
+    "btn_instant_delivery": "Request instant Delivery (Members only)",
+    "@btn_instant_delivery": {
+        "description": "Request instant Delivery (Members only)"
+    },
+    "lbl_offer_discount": "Offers & Discounts",
+    "@lbl_offer_discount": {
+        "description": "Offers & Discounts"
+    },
+    "txt_offer_desc": "Avail instant discount & offers with HDFC, ICICI, & other payment options only for you",
+    "@txt_offer_desc": {
+        "description": "Avail instant discount & offers with HDFC, ICICI, & other payment options only for you"
+    },
+    "txt_show_offers": "show offers",
+    "@txt_show_offers": {
+        "description": "show offers"
+    },
+    "lbl_saved_payment_option": "Saved payment options",
+    "@lbl_saved_payment_option": {
+        "description": "Saved payment options"
+    },
+    "btn_add_new_payment_option": "Add New Payment Option",
+    "@btn_add_new_payment_option": {
+        "description": "Add New Payment Option"
+    },
+    "txt_date_of_delivery": "Date of Delivery",
+    "@txt_date_of_delivery": {
+        "description": "Date of Delivery"
+    },
+    "tle_languages": "Languages",
+    "@tle_languages": {
+        "description": "Languages"
+    },
+    "lbl_select_language": "Select Language",
+    "@lbl_select_language": {
+        "description": "Select Language"
+    },
+    "tle_contact_us": "Contact Us",
+    "@tle_contact_us": {
+        "description": "Contact Us"
+    },
+    "lbl_contact_desc": "Let us know your valuable feedback",
+    "@lbl_contact_desc": {
+        "description": "Let us know your valuable feedback"
+    },
+    "lbl_name": "Name",
+    "@lbl_name": {
+        "description": "Name"
+    },
+    "lbl_phone_number": "Phone Number",
+    "@lbl_phone_number": {
+        "description": "Phone Number"
+    },
+    "lbl_email": "Email",
+    "@lbl_email": {
+        "description": "Email"
+    },
+    "lbl_your_feedback": "Your Feedback",
+    "@lbl_your_feedback": {
+        "description": "Your Feedback"
+    },
+    "hnt_enter_msg": "Enter your message",
+    "@hnt_enter_msg": {
+        "description": "Enter your message"
+    },
+    "btn_submit": "Submit",
+    "@btn_submit": {
+        "description": "Submit"
+    },
+    "tle_delivery_location": "Delivery Location",
+    "@tle_delivery_location": {
+        "description": "Delivery Location"
+    },
+    "hnt_search_new_location": "Search new location",
+    "@hnt_search_new_location": {
+        "description": "Search new location"
+    },
+    "lbl_use_current_location": "Use Current Location",
+    "@lbl_use_current_location": {
+        "description": "Use Current Location"
+    },
+    "lbl_use_saved_location": "Use Saved Locations",
+    "@lbl_use_saved_location": {
+        "description": "Use Saved Locations"
+    },
+    "lbl_recent_searched_location": "Recent Searched Locations",
+    "@lbl_recent_searched_location": {
+        "description": "Recent Searched Locations"
+    },
+    "tle_filter_option": "Filter Options",
+    "@tle_filter_option": {
+        "description": "Filter Options"
+    },
+    "lbl_sort_by_name": "Sort By Name",
+    "@lbl_sort_by_name": {
+        "description": "Sort By Name"
+    },
+    "txt_A_Z": "A to Z",
+    "@txt_A_Z": {
+        "description": "A to Z"
+    },
+    "txt_Z_A": "Z to A",
+    "@txt_Z_A": {
+        "description": "Z to A"
+    },
+    "lbl_sort_by_rating": "Sort By Rating",
+    "@lbl_sort_by_rating": {
+        "description": "Sort By Rating"
+    },
+    "txt_1_2_stars": "1 - 2 Stars",
+    "@txt_1_2_stars": {
+        "description": "1 - 2 Stars"
+    },
+    "txt_2_3_stars": "2 - 3 Stars",
+    "@txt_2_3_stars": {
+        "description": "2 - 3 Stars"
+    },
+    "txt_3_4_stars": "3 - 4 Stars",
+    "@txt_3_4_stars": {
+        "description": "3 - 4 Stars"
+    },
+    "txt_4_5_stars": "4 - 5 Stars",
+    "@txt_4_5_stars": {
+        "description": "4 - 5 Stars"
+    },
+    "lbl_sort_by_price": "Sort By Price",
+    "@lbl_sort_by_price": {
+        "description": "Sort By Price"
+    },
+    "txt_low_to_high": "Low to high",
+    "@txt_low_to_high": {
+        "description": "Low to high"
+    },
+    "txt_high_to_low": "High to low",
+    "@txt_high_to_low": {
+        "description": "High to low"
+    },
+    "lbl_sort_by_discount": "Sort By Discounts",
+    "@lbl_sort_by_discount": {
+        "description": "Sort By Discounts"
+    },
+    "lbl_10_25_percent": "10 - 25%",
+    "@lbl_10_25_percent": {
+        "description": "10 - 25%"
+    },
+    "lbl_25_50_percent": "25 - 50%",
+    "@lbl_25_50_percent": {
+        "description": "25 - 50%"
+    },
+    "lbl_50_75_percent": "50 - 70%",
+    "@lbl_50_75_percent": {
+        "description": "50 - 70%"
+    },
+    "lbl_above_70_percent": "70% above",
+    "@lbl_above_70_percent": {
+        "description": "70% above"
+    },
+    "lbl_sort_by_availability": "Sort By Availability",
+    "@lbl_sort_by_availability": {
+        "description": "Sort By Availability"
+    },
+    "txt_in_stock": "In Stock",
+    "@txt_in_stock": {
+        "description": "In Stock"
+    },
+    "txt_out_of_stock": "Out of Stock",
+    "@txt_out_of_stock": {
+        "description": "Out of Stock"
+    },
+    "lbl_sort_by_gmart": "Sort By Gmart Assurance",
+    "@lbl_sort_by_gmart": {
+        "description": "Sort By Gmart Assurance"
+    },
+    "txt_g_assured": "G - Assured",
+    "@txt_g_assured": {
+        "description": "G - Assured"
+    },
+    "txt_includeall": "Include all",
+    "@txt_includeall": {
+        "description": "Include all"
+    },
+    "btn_apply_filter": "Apply Filter (2015 Products Found)",
+    "@btn_apply_filter": {
+        "description": "Apply Filter (2015 Products Found)"
+    },
+    "txt_deliver": "Deliver",
+    "@txt_deliver": {
+        "description": "Deliver"
+    },
+    "btn_explore_all": "Explore all",
+    "@btn_explore_all": {
+        "description": "Explore all"
+    },
+    "lbl_top_selling": "Top Selling",
+    "@lbl_top_selling": {
+        "description": "Top Selling"
+    },
+    "lbl_in_spotlight": "In Spotlight",
+    "@lbl_in_spotlight": {
+        "description": "In Spotlight"
+    },
+    "lbl_recent_selling": "Recent Selling",
+    "@lbl_recent_selling": {
+        "description": "Recent Selling"
+    },
+    "lbl_whats_new": "What's New",
+    "@lbl_whats_new": {
+        "description": "What's New"
+    },
+    "lbl_deal_products": "Deal Products",
+    "@lbl_deal_products": {
+        "description": "Deal Products"
+    },
+    "btn_get_started": "Get Started",
+    "@btn_get_started": {
+        "description": "Get Started"
+    },
+    "tle_login_signup": "Login or Sign up",
+    "@tle_login_signup": {
+        "description": "Login or Sign up"
+    },
+    "txt_provide_number_desc": "Provide your number please",
+    "@txt_provide_number_desc": {
+        "description": "Provide your number please"
+    },
+    "txt_otp_verification_desc": "а 4 digit code will be sent to you",
+    "@txt_otp_verification_desc": {
+        "description": "а 4 digit code will be sent to you"
+    },
+    "btn_send_otp": "Get SMS",
+    "@btn_send_otp": {
+        "description": "Get SMS"
+    },
+    "txt_login_signup_using": "Or Login/Sign up using",
+    "@txt_login_signup_using": {
+        "description": "Or Login/Sign up using"
+    },
+    "tle_membership": "MemberShip",
+    "@tle_membership": {
+        "description": "MemberShip"
+    },
+    "lbl_choose_plan": "Choose your plan",
+    "@lbl_choose_plan": {
+        "description": "Choose your plan"
+    },
+    "txt_membership_desc": "We value our customers, became a prime member to avail the most",
+    "@txt_membership_desc": {
+        "description": "We value our customers, became a prime member to avail the most"
+    },
+    "tle_notification": "Notifications",
+    "@tle_notification": {
+        "description": "Notifications"
+    },
+    "tle_order_details": "Order Details",
+    "@tle_order_details": {
+        "description": "Order Details"
+    },
+    "txt_status": "Status",
+    "@txt_status": {
+        "description": "Status"
+    },
+    "txt_delivered": "Delivered",
+    "@txt_delivered": {
+        "description": "Delivered"
+    },
+    "btn_add_rating": "Add Ratings",
+    "@btn_add_rating": {
+        "description": "Add Ratings"
+    },
+    "btn_re_order": "Re - Order",
+    "@btn_re_order": {
+        "description": "Re - Order"
+    },
+    "lbl_all_orders": "All Orders",
+    "@lbl_all_orders": {
+        "description": "All Orders"
+    },
+    "lbl_scheduled": "Scheduled",
+    "@lbl_scheduled": {
+        "description": "Scheduled"
+    },
+    "lbl_previous": "Previous",
+    "@lbl_previous": {
+        "description": "Previous"
+    },
+    "tle_my_order": "My orders",
+    "@tle_my_order": {
+        "description": "My orders"
+    },
+    "tle_congrates": "Congrats !",
+    "@tle_congrates": {
+        "description": "Congrats !"
+    },
+    "txt_order_success_description": "Your order has been placed successfully. Stay tuned, our delivery partner will get back to you shortly.",
+    "@txt_order_success_description": {
+        "description": "Your order has been placed successfully. Stay tuned, our delivery partner will get back to you shortly."
+    },
+    "btn_track_order": "Track Your Order",
+    "@btn_track_order": {
+        "description": "Track Your Order"
+    },
+    "btn_browse_more": "Browse More",
+    "@btn_browse_more": {
+        "description": "Browse More"
+    },
+    "tle_verify_number": "Verify Number",
+    "@tle_verify_number": {
+        "description": "Verify Number"
+    },
+    "txt_otp_sent_desc": "4 digit OTP is send in your Number",
+    "@txt_otp_sent_desc": {
+        "description": "4 digit OTP is send in your Number"
+    },
+    "txt_otp_verify_desc": "Please enter OTP to verify your Number",
+    "@txt_otp_verify_desc": {
+        "description": "Please enter OTP to verify your Number"
+    },
+    "txt_enter_otp": "Enter OTP Manually",
+    "@txt_enter_otp": {
+        "description": "Enter OTP Manually"
+    },
+    "btn_submit_login": "Submit & Login",
+    "@btn_submit_login": {
+        "description": "Submit & Login"
+    },
+    "txt_didnt_receive_otp": "Didn't receive the OTP yet?",
+    "@txt_didnt_receive_otp": {
+        "description": "Didn't receive the OTP yet?"
+    },
+    "btn_resend_otp": "Resend OTP",
+    "@btn_resend_otp": {
+        "description": "Resend OTP"
+    },
+    "tle_product_details": "Product Details",
+    "@tle_product_details": {
+        "description": "Product Details"
+    },
+    "lbl_similar_products": "Similar Products",
+    "@lbl_similar_products": {
+        "description": "Similar Products"
+    },
+    "tle_edit_profile": "Edit Profile",
+    "@tle_edit_profile": {
+        "description": "Edit Profile"
+    },
+    "btn_update_profile_picture": "Update Profile Picture",
+    "@btn_update_profile_picture": {
+        "description": "Edit Profile"
+    },
+    "lbl_edit_name": "Edit Name",
+    "@lbl_edit_name": {
+        "description": "Edit Name"
+    },
+    "lbl_edit_phone_number": "Edit Phone Number",
+    "@lbl_edit_phone_number": {
+        "description": "Edit Phone Number"
+    },
+    "lbl_edit_email": "Edit Email",
+    "@lbl_edit_email": {
+        "description": "Edit Email"
+    },
+    "lbl_edit_gender": "Edit Gender",
+    "@lbl_edit_gender": {
+        "description": "Edit Gender"
+    },
+    "btn_save_update": "Save & Update",
+    "@btn_save_update": {
+        "description": "Save & Update"
+    },
+    "btn_my_orders": "My Orders",
+    "@btn_my_orders": {
+        "description": "My Orders"
+    },
+    "btn_manage_orders": "Manage Address",
+    "@btn_manage_orders": {
+        "description": "Manage Address"
+    },
+    "btn_my_wallet": "My Wallet",
+    "@btn_my_wallet": {
+        "description": "My Wallet"
+    },
+    "btn_wishlist": "WishList",
+    "@btn_wishlist": {
+        "description": "WishList"
+    },
+    "btn_notification": "Notification",
+    "@btn_notification": {
+        "description": "Notification"
+    },
+    "btn_membership": "Membership",
+    "@btn_membership": {
+        "description": "Membership"
+    },
+    "btn_reward": "Reward",
+    "@btn_reward": {
+        "description": "Reward"
+    },
+    "btn_refer_earn": "Refer & Earn",
+    "@btn_refer_earn": {
+        "description": "Refer & Earn"
+    },
+    "btn_mode": "Mode",
+    "@btn_mode": {
+        "description": "Mode"
+    },
+    "btn_about_app": "About App",
+    "@btn_about_app": {
+        "description": "About App"
+    },
+    "btn_app_setting": "App Settings",
+    "@btn_app_setting": {
+        "description": "App Settings"
+    },
+    "btn_logout": "Logout",
+    "@btn_logout": {
+        "description": "Logout"
+    },
+    "btn_rate_order": "Rate Orders",
+    "@btn_rate_order": {
+        "description": "Rate Orders"
+    },
+    "lbl_order_id": "Order ID",
+    "@lbl_order_id": {
+        "description": "Order ID"
+    },
+    "lbl_number_of_items": "Number of  Items",
+    "@lbl_number_of_items": {
+        "description": "Number of  Items"
+    },
+    "lbl_delivered_on": "Delivered on",
+    "@lbl_delivered_on": {
+        "description": "Delivered on"
+    },
+    "lbl_rate_overall_exp": "Rate Overall Experience",
+    "@lbl_rate_overall_exp": {
+        "description": "Rate Overall Experience"
+    },
+    "lbl_rate_buddy": "Rate Gmart Delivery Buddy",
+    "@lbl_rate_buddy": {
+        "description": "Rate Gmart Delivery Buddy"
+    },
+    "hnt_comment": "your comment (Optional)",
+    "@hnt_comment": {
+        "description": "your comment (Optional)"
+    },
+    "btn_submit_rating": "Submit Rating",
+    "@btn_submit_rating": {
+        "description": "Submit Rating"
+    },
+    "tle_invite_earn": "Invite & Earn",
+    "@tle_invite_earn": {
+        "description": "Invite & Earn"
+    },
+    "txt_refer_msg": "Refer and Earn Wallet Amount Upto from 1 to 15",
+    "@txt_refer_msg": {
+        "description": "Refer and Earn Wallet Amount Upto from 1 to 15"
+    },
+    "txt_share_msg": "Share your code below and ask them to enter it during registration. Earn when your friends signup on our app.",
+    "@txt_share_msg": {
+        "description": "Share your code below and ask them to enter it during registration. Earn when your friends signup on our app."
+    },
+    "txt_tap_to_copy": "Tap to copy",
+    "@txt_tap_to_copy": {
+        "description": "Tap to copy"
+    },
+    "btn_invite_friends": "Invite Friends",
+    "@btn_invite_friends": {
+        "description": "Invite Friends"
+    },
+    "tle_reward_points": "Reward Points",
+    "@tle_reward_points": {
+        "description": "Reward Points"
+    },
+    "lbl_reward_points": "Your reward points",
+    "@lbl_reward_points": {
+        "description": "Your reward points"
+    },
+    "btn_redeem_points": "Redeem Points",
+    "@btn_redeem_points": {
+        "description": "Redeem Points"
+    },
+    "hnt_search_for_products": "Search for products",
+    "@hnt_search_for_products": {
+        "description": "Search for products"
+    },
+    "lbl_recent_search": "Recent Searches",
+    "@lbl_recent_search": {
+        "description": "Recent Searches"
+    },
+    "btn_load_more": "Load More",
+    "@btn_load_more": {
+        "description": "Load More"
+    },
+    "tle_search_by_top_selling": "Search by Top Selling",
+    "@tle_search_by_top_selling": {
+        "description": "Search by Top Selling"
+    },
+    "tle_platinum_pro": "Platinum Pro",
+    "@tle_platinum_pro": {
+        "description": "Platinum Pro"
+    },
+    "lbl_subscription_plan": "Subscription Plan",
+    "@lbl_subscription_plan": {
+        "description": "Subscription Plan"
+    },
+    "btn_subscribe_this_plan": "Subscribe this plan",
+    "@btn_subscribe_this_plan": {
+        "description": "Subscribe this plan"
+    },
+    "btn_explore_other_plan": "Explore Other Plans",
+    "@btn_explore_other_plan": {
+        "description": "Explore Other Plans"
+    },
+    "tle_track_order": "Track Order",
+    "@tle_track_order": {
+        "description": "Track Order"
+    },
+    "txt_estimate_time": "Estimated Time of Arrival: 45 mins",
+    "@txt_estimate_time": {
+        "description": "Estimated Time of Arrival: 45 mins"
+    },
+    "lbl_order_place_on": "Order Placed on",
+    "@lbl_order_place_on": {
+        "description": "Order Placed on"
+    },
+    "lbl_available_balance": "Available balance",
+    "@lbl_available_balance": {
+        "description": "Available balance"
+    },
+     "lbl_recharge_history": "Recharge History",
+    "@lbl_recharge_history": {
+        "description": "Recharge History"
+    },
+     "lbl_spent_analysis": "Spent Analysis",
+    "@lbl_spent_analysis": {
+        "description": "Spent Analysis"
+    },
+     "lbl_razoypay": "Razorpay",
+    "@lbl_razoypay": {
+        "description": "Razorpay"
+    },
+     "hnt_enter_amount": "Enter Amount",
+    "@hnt_enter_amount": {
+        "description": "Enter Amount"
+    },
+     "lbl_other_methods": "Other Methods",
+    "@lbl_other_methods": {
+        "description": "Other Methods"
+    },
+     "btn_add_all_to_cart": "Add all item to cart",
+    "@btn_add_all_to_cart": {
+        "description": "Add all item to cart"
+    },
+     "lbl_callback_desc": "Would you like to request for callback from us ?",
+    "@lbl_callback_desc": {
+        "description": "Would you like to request for callback from us ?"
+    }
+,
+  "btn_callback_request": "Callback Request",
+    "@btn_callback_request": {
+        "description": "Callback Request"
+    },
+
+    "title_leave_feedback": "Leave feedback",
+    "@title_leave_feedback": {
+        "description": "Leave feedback"
+    },
+
+    "title_booking": "Booking",
+    "@title_booking": {
+        "description": "Booking"
+    }
+
+}

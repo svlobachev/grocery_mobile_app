@@ -1,0 +1,779 @@
+{
+    "gender_select_male": "Мужской",
+    "gender_select_female": "Женский",
+    "gender_select_not_selected": "Не выбрано",
+    "lbl_edit_birthday": "Ваш день рождения",
+    "@lbl_edit_birthday": {
+        "description": "Ваш день рождения"
+    },
+    "tle_add_new_address": "Добавить новый адрес",
+    "@tle_add_new_address": {
+        "description": "Добавить новый адрес"
+    },
+    "hnt_address": "Адрес (Улица, Дом, Квартира)",
+    "@hnt_address": {
+        "description": "Адрес (Улица, Дом, Квартира)"
+    },
+    "hnt_near_landmark": "Ближайшая метка",
+    "@hnt_near_landmark": {
+        "description": "Ближайшая метка"
+    },
+    "hnt_pincode": "Пинкод",
+    "@hnt_pincode": {
+        "description": "Пинкод"
+    },
+    "hnt_country": "Страна",
+    "@hnt_country": {
+        "description": "Страна"
+    },
+    "hnt_state": "Штат",
+    "@hnt_state": {
+        "description": "Штат"
+    },
+    "hnt_city_district": "Город",
+    "@hnt_city_district": {
+        "description": "Город"
+    },
+    "lbl_save_address": "Сохранить адрес как",
+    "@lbl_save_address": {
+        "description": "Сохранить адрес как"
+    },
+    "txt_home": "Дом",
+    "@txt_home": {
+        "description": "Дом"
+    },
+    "txt_office": "Офис",
+    "@txt_office": {
+        "description": "Офис"
+    },
+    "txt_others": "Другое",
+    "@txt_others": {
+        "description": "Другое"
+    },
+    "txt_default_address": "Сохранить как адрес по-умолчанию",
+    "@txt_default_address": {
+        "description": "Сохранить как адрес по-умолчанию"
+    },
+    "btn_save_address": "Сохранить адрес",
+    "@btn_save_address": {
+        "description": "Сохранить адрес"
+    },
+    "txt_default_payment_option": "Сохранить как стандартный способ оплаты",
+    "@txt_default_payment_option": {
+        "description": "Сохранить как стандартный способ оплаты"
+    },
+    "lbl_credit_debit_card": "Кредитная / Дебетовая карта",
+    "@lbl_credit_debit_card": {
+        "description": "Кредитная / Дебетовая карта"
+    },
+    "hnt_card_number": "Номер карты",
+    "@hnt_card_number": {
+        "description": "Номер карты"
+    },
+    "hnt_name_card": "Имя на карте",
+    "@hnt_name_card": {
+        "description": "Имя на карте"
+    },
+    "hnt_valid_through": "Годен до (ММ/ГГ)",
+    "@hnt_valid_through": {
+        "description": "Годен до (ММ/ГГ)"
+    },
+    "hnt_cvv": "CVV",
+    "@hnt_cvv": {
+        "description": "CVV"
+    },
+    "lbl_COD": "Оплата при доставке",
+    "@lbl_COD": {
+        "description": "Оплата при доставке"
+    },
+    "lbl_upi_option": "PhonePe / Google Pay / UPI",
+    "@lbl_upi_option": {
+        "description": "PhonePe / Google Pay / UPI"
+    },
+    "lbl_wallet_option": "PayTM / Wallets",
+    "@lbl_wallet_option": {
+        "description": "PayTM / Wallets"
+    },
+    "lbl_netbanking": "Интернет-банкинг",
+    "@lbl_netbanking": {
+        "description": "Интернет-банкинг"
+    },
+    "btn_payment_option": "Сохранить вариант оплаты",
+    "@btn_payment_option": {
+        "description": "Сохранить вариант оплаты"
+    },
+    "tle_add_new_payment": "Добавить новый платеж",
+    "@tle_add_new_payment": {
+        "description": "Добавить новый платеж"
+    },
+    "tle_my_address": "Адреса заведений",
+    "@tle_my_address": {
+        "description": "Адреса заведений"
+    },
+    "tle_all_category": "Все категории",
+    "@tle_all_category": {
+        "description": "Все категории"
+    },
+    "txt_from": "От",
+    "@txt_from": {
+        "description": "От"
+    },
+    "txt_cart": "Корзина",
+    "@txt_cart": {
+        "description": "Корзина"
+    },
+    "txt_address": "Адрес",
+    "@txt_address": {
+        "description": "Адрес"
+    },
+    "txt_time": "Время",
+    "@txt_time": {
+        "description": "Время"
+    },
+    "txt_payment": "Оплата",
+    "@txt_payment": {
+        "description": "Оплата"
+    },
+    "txt_shopping_cart": "Корзина",
+    "@txt_shopping_cart": {
+        "description": "Корзина"
+    },
+    "btn_proceed_to_checkout": "Перейти к оформлению заказа",
+    "@btn_proceed_to_checkout": {
+        "description": "Перейти к оформлению заказа"
+    },
+    "btn_proceed_to_select_time": "Перейти к выбору временного интервала",
+    "@btn_proceed_to_select_time": {
+        "description": "Перейти к выбору временного интервала"
+    },
+    "txt_proceed_to_pay": "Приступить к оплате",
+    "@txt_proceed_to_pay": {
+        "description": "Приступить к оплате"
+    },
+    "btn_make_payment": "Произвести оплату",
+    "@btn_make_payment": {
+        "description": "Произвести оплату"
+    },
+    "txt_off": "Выкл.",
+    "@txt_off": {
+        "description": "Выкл."
+    },
+    "txt_ratings": "Рейтинги",
+    "@txt_ratings": {
+        "description": "Рейтинги"
+    },
+    "lbl_price_details": "Информация о цене",
+    "@lbl_price_details": {
+        "description": "Информация о цене"
+    },
+    "txt_total_price": "Итоговая цена",
+    "@txt_total_price": {
+        "description": "Итоговая цена"
+    },
+    "txt_discount_price": "Скидка на цену",
+    "@txt_discount_price": {
+        "description": "Скидка на цену"
+    },
+    "txt_coupon_discount": "Скидка по купону",
+    "@txt_coupon_discount": {
+        "description": "Скидка по купону"
+    },
+    "txt_apply_coupon": "Применить купон",
+    "@txt_apply_coupon": {
+        "description": "Применить купон"
+    },
+    "txt_delivery_charges": "Плата за доставку",
+    "@txt_delivery_charges": {
+        "description": "Плата за доставку"
+    },
+    "lbl_total_amount": "Общее количество",
+    "@lbl_total_amount": {
+        "description": "Общее количество"
+    },
+    "btn_add_new_address": "Добавить новый адрес",
+    "@btn_add_new_address": {
+        "description": "Добавить новый адрес"
+    },
+    "lbl_select_date": "Выбрать дату",
+    "@lbl_select_date": {
+        "description": "Выбрать дату"
+    },
+    "lbl_select_time_slot": "Выбрать временной интервал",
+    "@lbl_select_time_slot": {
+        "description": "Выбрать временной интервал"
+    },
+    "txt_mention_time": "Упомянуть конкретное время",
+    "@txt_mention_time": {
+        "description": "Упомянуть конкретное время"
+    },
+    "btn_instant_delivery": "Запросить мгновенную доставку (Только для членов)",
+    "@btn_instant_delivery": {
+        "description": "Запросить мгновенную доставку (Только для членов)"
+    },
+    "lbl_offer_discount": "Предложения & скидки",
+    "@lbl_offer_discount": {
+        "description": "Предложения & скидки"
+    },
+    "txt_offer_desc": "Мгновенная скидка & предложения с HDFC, ICICI, & другие варианты оплаты только для вас",
+    "@txt_offer_desc": {
+        "description": "Мгновенная скидка & предложения с HDFC, ICICI, & другие варианты оплаты только для вас"
+    },
+    "txt_show_offers": "Показать предложения",
+    "@txt_show_offers": {
+        "description": "Показать предложения"
+    },
+    "lbl_saved_payment_option": "Сохраненные варианты оплаты",
+    "@lbl_saved_payment_option": {
+        "description": "Сохраненные варианты оплаты"
+    },
+    "btn_add_new_payment_option": "Добавить новый вариант оплаты",
+    "@btn_add_new_payment_option": {
+        "description": "Добавить новый вариант оплаты"
+    },
+    "txt_date_of_delivery": "Дата доставки",
+    "@txt_date_of_delivery": {
+        "description": "Дата доставки"
+    },
+    "tle_languages": "Изменить язык",
+    "@tle_languages": {
+        "description": "Изменить язык"
+    },
+    "lbl_select_language": "Выбрать язык",
+    "@lbl_select_language": {
+        "description": "Выбрать язык"
+    },
+    "tle_contact_us": "Связаться с нами",
+    "@tle_contact_us": {
+        "description": "Связаться с нами"
+    },
+    "lbl_contact_desc": "Дайте нам знать ваш ценный отзыв",
+    "@lbl_contact_desc": {
+        "description": "Дайте нам знать ваш ценный отзыв"
+    },
+    "lbl_name": "Имя",
+    "@lbl_name": {
+        "description": "Имя"
+    },
+    "lbl_phone_number": "Номер телефона",
+    "@lbl_phone_number": {
+        "description": "Номер телефона"
+    },
+    "lbl_email": "Email",
+    "@lbl_email": {
+        "description": "Email"
+    },
+    "lbl_your_feedback": "Ваша поддержка",
+    "@lbl_your_feedback": {
+        "description": "Ваша поддержка"
+    },
+    "hnt_enter_msg": "Введите ваше сообщение",
+    "@hnt_enter_msg": {
+        "description": "Введите ваше сообщение"
+    },
+    "btn_submit": "Отправить",
+    "@btn_submit": {
+        "description": "Отправить"
+    },
+    "tle_delivery_location": "Адрес доставки",
+    "@tle_delivery_location": {
+        "description": "Адрес доставки"
+    },
+    "hnt_search_new_location": "Искать новое место",
+    "@hnt_search_new_location": {
+        "description": "Искать новое место"
+    },
+    "lbl_use_current_location": "Использовать текущее местоположение",
+    "@lbl_use_current_location": {
+        "description": "Использовать текущее местоположение"
+    },
+    "lbl_use_saved_location": "Использовать сохраненные местоположения",
+    "@lbl_use_saved_location": {
+        "description": "Использовать сохраненные местоположения"
+    },
+    "lbl_recent_searched_location": "Недавние поисковые запросы",
+    "@lbl_recent_searched_location": {
+        "description": "Недавние поисковые запросы"
+    },
+    "tle_filter_option": "Параметры фильтра",
+    "@tle_filter_option": {
+        "description": "Параметры фильтра"
+    },
+    "lbl_sort_by_name": "Сортировать по имени",
+    "@lbl_sort_by_name": {
+        "description": "Сортировать по имени"
+    },
+    "txt_A_Z": "А до Я",
+    "@txt_A_Z": {
+        "description": "А до Я"
+    },
+    "txt_Z_A": "Я до А",
+    "@txt_Z_A": {
+        "description": "Я до А"
+    },
+    "lbl_sort_by_rating": "Сортировать по рейтингу",
+    "@lbl_sort_by_rating": {
+        "description": "Сортировать по рейтингу"
+    },
+    "txt_1_2_stars": "1 - 2 звезды",
+    "@txt_1_2_stars": {
+        "description": "1 - 2 звезды"
+    },
+    "txt_2_3_stars": "2 - 3 звезды",
+    "@txt_2_3_stars": {
+        "description": "2 - 3 звезды"
+    },
+    "txt_3_4_stars": "3 - 4 звезды",
+    "@txt_3_4_stars": {
+        "description": "3 - 4 звезды"
+    },
+    "txt_4_5_stars": "4 - 5 звезд",
+    "@txt_4_5_stars": {
+        "description": "4 - 5 звезд"
+    },
+    "lbl_sort_by_price": "Сортировать по цене",
+    "@lbl_sort_by_price": {
+        "description": "Сортировать по цене"
+    },
+    "txt_low_to_high": "По возрастанию",
+    "@txt_low_to_high": {
+        "description": "По возрастанию"
+    },
+    "txt_high_to_low": "По убыванию",
+    "@txt_high_to_low": {
+        "description": "По убыванию"
+    },
+    "lbl_sort_by_discount": "Сортировать по скидкам",
+    "@lbl_sort_by_discount": {
+        "description": "Сортировать по скидкам"
+    },
+    "lbl_10_25_percent": "10 - 25%",
+    "@lbl_10_25_percent": {
+        "description": "10 - 25%"
+    },
+    "lbl_25_50_percent": "25 - 50%",
+    "@lbl_25_50_percent": {
+        "description": "25 - 50%"
+    },
+    "lbl_50_75_percent": "50 - 70%",
+    "@lbl_50_75_percent": {
+        "description": "50 - 70%"
+    },
+    "lbl_above_70_percent": "70% и выше",
+    "@lbl_above_70_percent": {
+        "description": "70% и выше"
+    },
+    "lbl_sort_by_availability": "Сортировать по доступности",
+    "@lbl_sort_by_availability": {
+        "description": "Сортировать по доступности"
+    },
+    "txt_in_stock": "В наличии",
+    "@txt_in_stock": {
+        "description": "В наличии"
+    },
+    "txt_out_of_stock": "Нет в наличии",
+    "@txt_out_of_stock": {
+        "description": "Нет в наличии"
+    },
+    "lbl_sort_by_gmart": "Сортировать по Gmart Assurance",
+    "@lbl_sort_by_gmart": {
+        "description": "Сортировать по Gmart Assurance"
+    },
+    "txt_g_assured": "G - Assured",
+    "@txt_g_assured": {
+        "description": "G - Assured"
+    },
+    "txt_includeall": "Включить все",
+    "@txt_includeall": {
+        "description": "Включить все"
+    },
+    "btn_apply_filter": "Применить фильтр (2015 Найденные продукты)",
+    "@btn_apply_filter": {
+        "description": "Применить фильтр (2015 Найденные продукты)"
+    },
+    "txt_deliver": "Доставлять",
+    "@txt_deliver": {
+        "description": "Доставлять"
+    },
+    "btn_explore_all": "Изучить все",
+    "@btn_explore_all": {
+        "description": "Изучить все"
+    },
+    "lbl_top_selling": "Лучшие продажи",
+    "@lbl_top_selling": {
+        "description": "Лучшие продажи"
+    },
+    "lbl_in_spotlight": "В центре внимания",
+    "@lbl_in_spotlight": {
+        "description": "В центре внимания"
+    },
+    "lbl_recent_selling": "Последние продажи",
+    "@lbl_recent_selling": {
+        "description": "Последние продажи"
+    },
+    "lbl_whats_new": "Что нового",
+    "@lbl_whats_new": {
+        "description": "Что нового"
+    },
+    "lbl_deal_products": "Товары для сделок",
+    "@lbl_deal_products": {
+        "description": "Товары для сделок"
+    },
+    "btn_get_started": "Начать",
+    "@btn_get_started": {
+        "description": "Начать"
+    },
+    "tle_login_signup": "Войдите или зарегистрируйтесь",
+    "@tle_login_signup": {
+        "description": "Войдите или зарегистрируйтесь"
+    },
+    "txt_provide_number_desc": "Пожалуйста, укажите свой номер телефона",
+    "@txt_provide_number_desc": {
+        "description": "Пожалуйста, укажите свой номер телефона"
+    },
+    "txt_otp_verification_desc": "вам будет отправлен 4 значный код",
+    "@txt_otp_verification_desc": {
+        "description": "вам будет отправлен 4 значный код"
+    },
+    "btn_send_otp": "Получить СМС",
+    "@btn_send_otp": {
+        "description": "Получить СМС"
+    },
+    "txt_login_signup_using": "Или войдите / зарегистрируйтесь, используя",
+    "@txt_login_signup_using": {
+        "description": "Или войдите / зарегистрируйтесь, используя"
+    },
+    "tle_membership": "Подписки",
+    "@tle_membership": {
+        "description": "Подписки"
+    },
+    "lbl_choose_plan": "Выбери свой тариф",
+    "@lbl_choose_plan": {
+        "description": "Выбери свой тариф"
+    },
+    "txt_membership_desc": "Мы ценим наших клиентов, стали одним из основных членов, чтобы получить максимальную выгоду",
+    "@txt_membership_desc": {
+        "description": "Мы ценим наших клиентов, стали одним из основных членов, чтобы получить максимальную выгоду"
+    },
+    "tle_notification": "Уведомления",
+    "@tle_notification": {
+        "description": "Уведомления"
+    },
+    "tle_order_details": "Информация о заказе",
+    "@tle_order_details": {
+        "description": "Информация о заказе"
+    },
+    "txt_status": "Статус",
+    "@txt_status": {
+        "description": "Статус"
+    },
+    "txt_delivered": "Доставлено",
+    "@txt_delivered": {
+        "description": "Доставлено"
+    },
+    "btn_add_rating": "Добавить оценки",
+    "@btn_add_rating": {
+        "description": "Добавить оценки"
+    },
+    "btn_re_order": "Изменить порядок",
+    "@btn_re_order": {
+        "description": "Изменить порядок"
+    },
+    "lbl_all_orders": "Все заказы",
+    "@lbl_all_orders": {
+        "description": "Все заказы"
+    },
+    "lbl_scheduled": "По расписанию",
+    "@lbl_scheduled": {
+        "description": "По расписанию"
+    },
+    "lbl_previous": "Предыдущий",
+    "@lbl_previous": {
+        "description": "Предыдущий"
+    },
+    "tle_my_order": "Мои заказы",
+    "@tle_my_order": {
+        "description": "Мои заказы"
+    },
+    "tle_congrates": "Поздравляю !",
+    "@tle_congrates": {
+        "description": "Поздравляю !"
+    },
+    "txt_order_success_description": "Ваш заказ был успешно размещен. Следите за обновлениями, наш партнер по доставке свяжется с вами в ближайшее время.",
+    "@txt_order_success_description": {
+        "description": "Ваш заказ был успешно размещен. Следите за обновлениями, наш партнер по доставке свяжется с вами в ближайшее время."
+    },
+    "btn_track_order": "Отследить ваш заказ",
+    "@btn_track_order": {
+        "description": "Отследить ваш заказ"
+    },
+    "btn_browse_more": "Просмотреть больше",
+    "@btn_browse_more": {
+        "description": "Просмотреть больше"
+    },
+    "tle_verify_number": "Проверить номер",
+    "@tle_verify_number": {
+        "description": "Проверить номер"
+    },
+    "txt_otp_sent_desc": "На ваш номер отправляется 4-значный OTP",
+    "@txt_otp_sent_desc": {
+        "description": "На ваш номер отправляется 4-значный OTP"
+    },
+    "txt_otp_verify_desc": "Пожалуйста, введите OTP, чтобы подтвердить свой номер",
+    "@txt_otp_verify_desc": {
+        "description": "Пожалуйста, введите OTP, чтобы подтвердить свой номер"
+    },
+    "txt_enter_otp": "Ввести OTP вручную",
+    "@txt_enter_otp": {
+        "description": "Ввести OTP вручную"
+    },
+    "btn_submit_login": "Отправить & войти",
+    "@btn_submit_login": {
+        "description": "Отправить & войти"
+    },
+    "txt_didnt_receive_otp": "Еще не получили одноразовый пароль?",
+    "@txt_didnt_receive_otp": {
+        "description": "Еще не получили одноразовый пароль?"
+    },
+    "btn_resend_otp": "Отправить OTP повторно",
+    "@btn_resend_otp": {
+        "description": "Отправить OTP повторно"
+    },
+    "tle_product_details": "Информация о продукте",
+    "@tle_product_details": {
+        "description": "Информация о продукте"
+    },
+    "lbl_similar_products": "Похожие продукты",
+    "@lbl_similar_products": {
+        "description": "Похожие продукты"
+    },
+    "tle_edit_profile": "Редактировать профиль",
+    "@tle_edit_profile": {
+        "description": "Редактировать профиль"
+    },
+    "btn_update_profile_picture": "Обновить изображение профиля",
+    "@btn_update_profile_picture": {
+        "description": "Обновить изображение профиля"
+    },
+    "lbl_edit_name": "Ваше имя",
+    "@lbl_edit_name": {
+        "description": "Ваше имя"
+    },
+    "lbl_edit_phone_number": "Ваш номер телефона",
+    "@lbl_edit_phone_number": {
+        "description": "Ваш номер телефона"
+    },
+    "lbl_edit_email": "Ваш Email",
+    "@lbl_edit_email": {
+        "description": "Ваш Email"
+    },
+    "lbl_edit_gender": "Ваш пол",
+    "@lbl_edit_gender": {
+        "description": "Ваш пол"
+    },
+    "btn_save_update": "Сохранить & обновить",
+    "@btn_save_update": {
+        "description": "Сохранить & обновить"
+    },
+    "btn_my_orders": "Мои заказы",
+    "@btn_my_orders": {
+        "description": "Мои заказы"
+    },
+    "btn_manage_orders": "Управление адресом",
+    "@btn_manage_orders": {
+        "description": "Управление адресом"
+    },
+    "btn_my_wallet": "Моя карта",
+    "@btn_my_wallet": {
+        "description": "Моя карта"
+    },
+    "btn_wishlist": "WishList",
+    "@btn_wishlist": {
+        "description": "WishList"
+    },
+    "btn_notification": "Уведомления",
+    "@btn_notification": {
+        "description": "Уведомления"
+    },
+    "btn_membership": "Подписки",
+    "@btn_membership": {
+        "description": "Подписки"
+    },
+    "btn_reward": "Награда",
+    "@btn_reward": {
+        "description": "Награда"
+    },
+    "btn_refer_earn": "Присылайте & Зарабатывайте",
+    "@btn_refer_earn": {
+        "description": "Присылайте & Зарабатывайте"
+    },
+    "btn_mode": "Изменить режим",
+    "@btn_mode": {
+        "description": "Изменить режим"
+    },
+    "btn_about_app": "О приложении",
+    "@btn_about_app": {
+        "description": "О приложении"
+    },
+    "btn_app_setting": "Настройки приложения",
+    "@btn_app_setting": {
+        "description": "Настройки приложения"
+    },
+    "btn_logout": "Выйти",
+    "@btn_logout": {
+        "description": "Выйти"
+    },
+    "btn_rate_order": "Оценить заказы",
+    "@btn_rate_order": {
+        "description": "Оценить заказы"
+    },
+    "lbl_order_id": "ID заказа",
+    "@lbl_order_id": {
+        "description": "ID заказа"
+    },
+    "lbl_number_of_items": "Количество предметов",
+    "@lbl_number_of_items": {
+        "description": "Количество предметов"
+    },
+    "lbl_delivered_on": "Доставлено",
+    "@lbl_delivered_on": {
+        "description": "Доставлено"
+    },
+    "lbl_rate_overall_exp": "Оценить общий опыт",
+    "@lbl_rate_overall_exp": {
+        "description": "Оценить общий опыт"
+    },
+    "lbl_rate_buddy": "Rate Gmart Delivery Buddy",
+    "@lbl_rate_buddy": {
+        "description": "Rate Gmart Delivery Buddy"
+    },
+    "hnt_comment": "ваш комментарий (По желанию)",
+    "@hnt_comment": {
+        "description": "ваш комментарий (По желанию)"
+    },
+    "btn_submit_rating": "Отправить рейтинг",
+    "@btn_submit_rating": {
+        "description": "Отправить рейтинг"
+    },
+    "tle_invite_earn": "Приглашайте & Зарабатывайте",
+    "@tle_invite_earn": {
+        "description": "Приглашайте & Зарабатывайте"
+    },
+    "txt_refer_msg": "Приглашайте и зарабатывайте на кошельке сумму до от 1 до 15",
+    "@txt_refer_msg": {
+        "description": "Приглашайте и зарабатывайте на кошельке сумму до от 1 до 15"
+    },
+    "txt_share_msg": "Поделитесь своим кодом ниже и попросите ввести его при регистрации. Зарабатывайте, когда ваши друзья регистрируются в нашем приложении.",
+    "@txt_share_msg": {
+        "description": "Поделитесь своим кодом ниже и попросите ввести его при регистрации. Зарабатывайте, когда ваши друзья регистрируются в нашем приложении."
+    },
+    "txt_tap_to_copy": "Нажмите, чтобы скопировать",
+    "@txt_tap_to_copy": {
+        "description": "Нажмите, чтобы скопировать"
+    },
+    "btn_invite_friends": "Пригласить друзей",
+    "@btn_invite_friends": {
+        "description": "Пригласить друзей"
+    },
+    "tle_reward_points": "Бонусные очки",
+    "@tle_reward_points": {
+        "description": "Бонусные очки"
+    },
+    "lbl_reward_points": "Ваши бонусные баллы",
+    "@lbl_reward_points": {
+        "description": "Ваши бонусные баллы"
+    },
+    "btn_redeem_points": "Накопленные баллы",
+    "@btn_redeem_points": {
+        "description": "Накопленные баллы"
+    },
+    "hnt_search_for_products": "Искать продукты",
+    "@hnt_search_for_products": {
+        "description": "Искать продукты"
+    },
+    "lbl_recent_search": "Недавние поиски",
+    "@lbl_recent_search": {
+        "description": "Недавние поиски"
+    },
+    "btn_load_more": "Загрузить больше",
+    "@btn_load_more": {
+        "description": "Загрузить больше"
+    },
+    "tle_search_by_top_selling": "Поиск по самым продаваемым",
+    "@tle_search_by_top_selling": {
+        "description": "Поиск по самым продаваемым"
+    },
+    "tle_platinum_pro": "Platinum Pro",
+    "@tle_platinum_pro": {
+        "description": "Platinum Pro"
+    },
+    "lbl_subscription_plan": "План подписки",
+    "@lbl_subscription_plan": {
+        "description": "План подписки"
+    },
+    "btn_subscribe_this_plan": "Подпишитесь на этот план",
+    "@btn_subscribe_this_plan": {
+        "description": "Подпишитесь на этот план"
+    },
+    "btn_explore_other_plan": "Изучите другие планы",
+    "@btn_explore_other_plan": {
+        "description": "Изучите другие планы"
+    },
+    "tle_track_order": "Отследить заказ",
+    "@tle_track_order": {
+        "description": "Отследить заказ"
+    },
+    "txt_estimate_time": "Расчетное время прибытия: 45 минут",
+    "@txt_estimate_time": {
+        "description": "Расчетное время прибытия: 45 минут"
+    },
+    "lbl_order_place_on": "Заказ размещен на",
+    "@lbl_order_place_on": {
+        "description": "Заказ размещен на"
+    },
+    "lbl_available_balance": "Доступные средства",
+    "@lbl_available_balance": {
+        "description": "Доступные средства"
+    },
+     "lbl_recharge_history": "История пополнения баланса",
+    "@lbl_recharge_history": {
+        "description": "История пополнения баланса"
+    },
+     "lbl_spent_analysis": "Проведенный анализ",
+    "@lbl_spent_analysis": {
+        "description": "Проведенный анализ"
+    },
+     "lbl_razoypay": "Razorpay",
+    "@lbl_razoypay": {
+        "description": "Razorpay"
+    },
+     "hnt_enter_amount": "Введите сумму",
+    "@hnt_enter_amount": {
+        "description": "Введите сумму"
+    },
+     "lbl_other_methods": "Другие методы",
+    "@lbl_other_methods": {
+        "description": "Другие методы"
+    },
+     "btn_add_all_to_cart": "Добавить все в корзину",
+    "@btn_add_all_to_cart": {
+        "description": "Добавить все в корзину"
+    },
+     "lbl_callback_desc": "Вы хотите запросить обратный звонок у нас?",
+    "@lbl_callback_desc": {
+        "description": "Вы хотите запросить обратный звонок у нас?"
+    }
+,
+  "btn_callback_request": "Запрос обратного звонка",
+    "@btn_callback_request": {
+        "description": "Запрос обратного звонка"
+    },
+    "title_leave_feedback": "Оставить отзыв",
+    "@title_leave_feedback": {
+        "description": "Оставить отзыв"
+    },
+
+    "title_booking": "Бронировать",
+    "@title_booking": {
+        "description": "Бронировать"
+    }
+}
