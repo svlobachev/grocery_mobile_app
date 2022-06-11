@@ -110,7 +110,19 @@ class _LogInScreenState extends BaseRouteState {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(0.0))),
                       padding: EdgeInsets.only(),
-                      child: TextFormField(
+                      child: TextField(
+                        onSubmitted: (value) {
+                          Networking.instance
+                              .sendSmsCode(_phoneController.text)
+                              .then((value) {
+                            print(value.result.code);
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => OtpVerificationScreen(
+                                    '7' + _phoneController.text,
+                                    a: widget.analytics,
+                                    o: widget.observer)));
+                          });
+                        },
                         controller: _phoneController,
                         textInputAction: TextInputAction.done,
                         keyboardType: TextInputType.phone,

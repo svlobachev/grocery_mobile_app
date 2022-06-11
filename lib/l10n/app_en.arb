@@ -514,17 +514,17 @@
     "@tle_verify_number": {
         "description": "Verify Number"
     },
-    "txt_otp_sent_desc": "4 digit OTP is send in your Number",
+    "txt_otp_sent_desc": "4 digit code is send in your Number",
     "@txt_otp_sent_desc": {
-        "description": "4 digit OTP is send in your Number"
+        "description": "4 digit code is send in your Number"
     },
-    "txt_otp_verify_desc": "Please enter OTP to verify your Number",
+    "txt_otp_verify_desc": "Please enter code to verify your Number",
     "@txt_otp_verify_desc": {
-        "description": "Please enter OTP to verify your Number"
+        "description": "Please enter code to verify your Number"
     },
-    "txt_enter_otp": "Enter OTP Manually",
+    "txt_enter_otp": "Enter code",
     "@txt_enter_otp": {
-        "description": "Enter OTP Manually"
+        "description": "Enter code"
     },
     "btn_submit_login": "Submit & Login",
     "@btn_submit_login": {

@@ -514,17 +514,17 @@
     "@tle_verify_number": {
         "description": "Проверить номер"
     },
-    "txt_otp_sent_desc": "На ваш номер отправляется 4-значный OTP",
+    "txt_otp_sent_desc": "На ваш номер отправляется 4-значный код",
     "@txt_otp_sent_desc": {
-        "description": "На ваш номер отправляется 4-значный OTP"
+        "description": "На ваш номер отправляется 4-значный код"
     },
-    "txt_otp_verify_desc": "Пожалуйста, введите OTP, чтобы подтвердить свой номер",
+    "txt_otp_verify_desc": "Пожалуйста, введите  код, чтобы подтвердить свой номер",
     "@txt_otp_verify_desc": {
-        "description": "Пожалуйста, введите OTP, чтобы подтвердить свой номер"
+        "description": "Пожалуйста, введите  код, чтобы подтвердить свой номер"
     },
-    "txt_enter_otp": "Ввести OTP вручную",
+    "txt_enter_otp": "Ввести код",
     "@txt_enter_otp": {
-        "description": "Ввести OTP вручную"
+        "description": "Ввести код"
     },
     "btn_submit_login": "Отправить & войти",
     "@btn_submit_login": {
