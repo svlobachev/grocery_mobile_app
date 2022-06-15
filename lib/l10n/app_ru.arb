@@ -514,9 +514,9 @@
     "@tle_verify_number": {
         "description": "Проверить номер"
     },
-    "txt_otp_sent_desc": "На ваш номер отправляется 4-значный код",
+    "txt_otp_sent_desc": "На ваш номер отправлен 4-значный код",
     "@txt_otp_sent_desc": {
-        "description": "На ваш номер отправляется 4-значный код"
+        "description": "На ваш номер отправлен 4-значный код"
     },
     "txt_otp_verify_desc": "Пожалуйста, введите  код, чтобы подтвердить свой номер",
     "@txt_otp_verify_desc": {

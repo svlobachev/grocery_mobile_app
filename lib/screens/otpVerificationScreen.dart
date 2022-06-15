@@ -26,7 +26,8 @@ class OtpVerificationScreen extends BaseRoute {
 class _OtpVerificationScreenState extends BaseRouteState {
   String phone;
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
-
+  final FocusNode _pinPutFocusNode = FocusNode();
+  final TextEditingController _pinPutController = TextEditingController();
   String _errorMessage;
 
   BoxDecoration get _pinPutDecoration {
@@ -36,9 +37,6 @@ class _OtpVerificationScreenState extends BaseRouteState {
       borderRadius: BorderRadius.circular(5.0),
     );
   }
-
-  final FocusNode _pinPutFocusNode = FocusNode();
-  final TextEditingController _pinPutController = TextEditingController();
 
   _OtpVerificationScreenState(String phone) : super() {
     this.phone = phone;
@@ -160,6 +158,9 @@ class _OtpVerificationScreenState extends BaseRouteState {
                         borderRadius: BorderRadius.circular(5.0),
                         border: Border.all(color: Colors.transparent),
                       ),
+                      onSubmit: (value) {
+                        _pinPutFildOnPressed();
+                      },
                     ),
                   ),
                   Container(
@@ -180,59 +181,7 @@ class _OtpVerificationScreenState extends BaseRouteState {
                     width: MediaQuery.of(context).size.width,
                     child: TextButton(
                         onPressed: () {
-                          int code = int.parse(_pinPutController.text);
-                          Networking.instance
-                              .getAccountToken(phone, code, global.deviceToken)
-                              .then((value) async {
-                            SmsResponse data;
-
-                            if (value != null)
-                              data = SmsResponse.fromJson(
-                                  value.data as Map<String, dynamic>);
-                            else
-                              return;
-
-                            global.accountToken = data.result.accountToken;
-
-                            if (global.accountToken != null) {
-                              final SharedPreferences prefs = await _prefs;
-                              prefs.setString(
-                                  'accountToken', global.accountToken);
-
-                              await Networking.instance
-                                  .getGuestData()
-                                  .then((value) {
-                                global.currentUser = value.result;
-                              });
-
-                              Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => BottomNavigationWidget(
-                                      a: widget.analytics,
-                                      o: widget.observer)));
-                            } else {
-                              Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => ProfileEditScreen(
-                                      a: widget.analytics,
-                                      o: widget.observer,
-                                      phone: phone,
-                                      code: code)));
-                            }
-                          }).catchError((err) {
-                            switch (err.runtimeType) {
-                              case DioError:
-                                final res = (err as DioError).response;
-
-                                setState(() {
-                                  _errorMessage =
-                                      ErrorEntity.fromJson(res.data['error'])
-                                          .message;
-                                });
-
-                                break;
-                              default:
-                                break;
-                            }
-                          });
+                          _pinPutFildOnPressed();
                         },
                         child: Text(
                             '${AppLocalizations.of(context).btn_submit_login}')),
@@ -273,6 +222,57 @@ class _OtpVerificationScreenState extends BaseRouteState {
         ),
       ),
     ));
+  }
+
+  _pinPutFildOnPressed() {
+    print("Pressd _pinPutFildOnPressed");
+    int code = int.parse(_pinPutController.text);
+    Networking.instance
+        .getAccountToken(phone, code, global.deviceToken)
+        .then((value) async {
+      SmsResponse data;
+
+      if (value != null) {
+        data = SmsResponse.fromJson(value.data as Map<String, dynamic>);
+      } else {
+        return;
+      }
+
+      global.accountToken = data.result.accountToken;
+
+      if (global.accountToken != null) {
+        final SharedPreferences prefs = await _prefs;
+        prefs.setString('accountToken', global.accountToken);
+
+        await Networking.instance.getGuestData().then((value) {
+          global.currentUser = value.result;
+        });
+
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => BottomNavigationWidget(
+                a: widget.analytics, o: widget.observer)));
+      } else {
+        Navigator.of(context).push(MaterialPageRoute(
+            builder: (context) => ProfileEditScreen(
+                a: widget.analytics,
+                o: widget.observer,
+                phone: phone,
+                code: code)));
+      }
+    }).catchError((err) {
+      switch (err.runtimeType) {
+        case DioError:
+          final res = (err as DioError).response;
+
+          setState(() {
+            _errorMessage = ErrorEntity.fromJson(res.data['error']).message;
+          });
+
+          break;
+        default:
+          break;
+      }
+    });
   }
 
   @override

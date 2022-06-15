@@ -140,7 +140,7 @@ class _SplashScreenState extends BaseRouteState {
     var savedToken = prefs.getString('accountToken');
 
     global.accountToken = savedToken;
-
+    global.deviceToken = prefs.getString('device_token');
     Timer(duration, () async {
       if (savedToken != null && savedToken.isNotEmpty) {
         await Networking.instance.getGuestData().then((value) {

@@ -148,7 +148,7 @@ class Networking {
   }
 
   Future<GuestResponse> getGuestData() async {
-    print('getGuestData accountToken - ${global.accountToken}');
+    print('accountToken --> ${global.accountToken}');
 
     var data = (await _api.callApi({
       "jsonrpc": "2.0",
