@@ -25,8 +25,10 @@ void main() async {
   // );
 
   global.deviceToken = prefs.getString('device_token');
+  var phone = prefs.getString('phone');
   global.appToken = '9fc45c34-a8cf-4504-8f3f-293ebff26013';
   print('deviceToken: --> ${global.deviceToken}');
+  print('phoneNumber: --> ${phone}');
 
   try {
     runApp(Phoenix(child: MyApp()));

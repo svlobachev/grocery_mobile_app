@@ -33,6 +33,6 @@ Future<void> savePhoneToLocalBase(String phone) async {
   final SharedPreferences prefs = await _prefs;
 
   await prefs.setString('phone', phone).then((bool success) {
-    print("funcSetPhone --> $phone");
+    // print("funcSetPhone --> $phone");
   });
 }
