@@ -24,9 +24,7 @@ void main() async {
   //   options: DefaultFirebaseOptions.currentPlatform,
   // );
 
-  // global.deviceToken = '499fd890224e01a2babf707540aaf89b';
   global.deviceToken = prefs.getString('device_token');
-
   global.appToken = '9fc45c34-a8cf-4504-8f3f-293ebff26013';
   print('deviceToken: --> ${global.deviceToken}');
 

@@ -182,7 +182,7 @@ class _OtpVerificationScreenState extends BaseRouteState {
                         onPressed: () {
                           int code = int.parse(_pinPutController.text);
                           Networking.instance
-                              .getAccountToken(phone, code)
+                              .getAccountToken(phone, code, global.deviceToken)
                               .then((value) async {
                             SmsResponse data;
 
