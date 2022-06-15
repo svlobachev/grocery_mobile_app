@@ -18,3 +18,8 @@ class OnRefresh {
     return _imagesList;
   }
 }
+
+// backgroundColor: Colors.blue,
+// onRefresh: () {
+// _imagesList = onRefresh.refreshBanners();
+// },
