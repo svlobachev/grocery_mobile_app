@@ -30,8 +30,8 @@ class _ProfileEditScreenState extends BaseRouteState {
   var _cEmail = new TextEditingController();
   var _cGender = new TextEditingController();
   var _cBirthday = new TextEditingController();
-  var _fName = new FocusNode();
 
+  var _fName = new FocusNode();
   var _fNameOnCard = new FocusNode();
   var _fEmail = new FocusNode();
   var _fGender = new FocusNode();
