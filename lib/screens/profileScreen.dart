@@ -3,22 +3,20 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:grocery_mobile_app/dto/guest.dart';
 import 'package:grocery_mobile_app/models/businessLayer/baseRoute.dart';
 import 'package:grocery_mobile_app/models/businessLayer/global.dart' as global;
-import 'package:grocery_mobile_app/screens/loginScreen.dart';
 import 'package:grocery_mobile_app/screens/profileEditScreen.dart';
+import 'package:grocery_mobile_app/screens/splashScreen.dart';
+import 'package:grocery_mobile_app/services/save_values_to_local_base.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfileScreen extends BaseRoute {
   ProfileScreen({a, o}) : super(a: a, o: o, r: 'ProfileScreen');
 
   @override
-  _ProfileScreenState createState() => new _ProfileScreenState();
+  _ProfileScreenState createState() => _ProfileScreenState();
 }
 
 class _ProfileScreenState extends BaseRouteState {
   Guest guest;
-
-  final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
   _ProfileScreenState() : super();
 
@@ -37,7 +35,7 @@ class _ProfileScreenState extends BaseRouteState {
         Container(
           height: 240,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               bottomRight: Radius.circular(45),
             ),
             gradient: LinearGradient(
@@ -60,13 +58,13 @@ class _ProfileScreenState extends BaseRouteState {
                 child: Container(
                   height: 200,
                   width: MediaQuery.of(context).size.width,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage('assets/myprofile.png'),
                     ),
                   ),
                   alignment: Alignment.topCenter,
-                  child: Center(
+                  child: const Center(
                     child: CircleAvatar(
                       radius: 60,
                       backgroundColor: Colors.white,
@@ -101,7 +99,7 @@ class _ProfileScreenState extends BaseRouteState {
               Positioned(
                 bottom: -10,
                 child: InkWell(
-                  borderRadius: BorderRadius.all(
+                  borderRadius: const BorderRadius.all(
                     Radius.circular(40),
                   ),
                   // onTap: () {
@@ -120,7 +118,7 @@ class _ProfileScreenState extends BaseRouteState {
                         color: Theme.of(context).primaryColor,
                         width: 2,
                       ),
-                      borderRadius: BorderRadius.all(
+                      borderRadius: const BorderRadius.all(
                         Radius.circular(40),
                       ),
                       color: Theme.of(context).scaffoldBackgroundColor,
@@ -280,13 +278,13 @@ class _ProfileScreenState extends BaseRouteState {
                   onTap: () async {
                     global.accountToken = null;
 
-                    final SharedPreferences prefs = await _prefs;
-                    prefs.remove('accountToken');
-                    prefs.remove('phone');
+                    removeLocalBaseValues();
                     Navigator.of(context).push(
                       MaterialPageRoute(
-                        builder: (context) => LogInScreen(
-                            a: widget.analytics, o: widget.observer),
+                        builder: (context) => SplashScreen(
+                          a: null,
+                          o: null,
+                        ),
                       ),
                     );
                   },
