@@ -6,7 +6,6 @@ import 'package:grocery_mobile_app/Theme/nativeTheme.dart';
 import 'package:grocery_mobile_app/Theme/themeChanger.dart';
 import 'package:grocery_mobile_app/l10n/l10n.dart';
 import 'package:grocery_mobile_app/provider/gender_provider.dart';
-import 'package:grocery_mobile_app/services/save_values_to_local_base.dart';
 import 'package:grocery_mobile_app/models/businessLayer/global.dart' as global;
 import 'package:grocery_mobile_app/provider/local_provider.dart';
 import 'package:grocery_mobile_app/screens/splashScreen.dart';
@@ -16,7 +15,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // removeLocalBaseValuesForTest(); // this function just for tests
-  deviceTokenSaveToLocalBase();
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   final SharedPreferences prefs = await _prefs;
 

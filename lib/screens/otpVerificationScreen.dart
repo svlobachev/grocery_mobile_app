@@ -158,9 +158,9 @@ class _OtpVerificationScreenState extends BaseRouteState {
                         borderRadius: BorderRadius.circular(5.0),
                         border: Border.all(color: Colors.transparent),
                       ),
-                      onSubmit: (value) {
-                        _pinPutFildOnPressed();
-                      },
+                      // onSubmit: (value) {
+                      //   _pinPutFildOnPressed();
+                      // },
                     ),
                   ),
                   Container(

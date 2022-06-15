@@ -9,6 +9,7 @@ import 'package:grocery_mobile_app/networking/networking.dart';
 import 'package:grocery_mobile_app/provider/local_provider.dart';
 import 'package:grocery_mobile_app/screens/loginScreen.dart';
 import 'package:grocery_mobile_app/services/config_service.dart';
+import 'package:grocery_mobile_app/services/save_values_to_local_base.dart';
 import 'package:grocery_mobile_app/widgets/bottomNavigationWidget.dart';
 import 'package:provider/provider.dart';
 import 'package:grocery_mobile_app/extensions/string_extensions.dart';
@@ -114,6 +115,7 @@ class _SplashScreenState extends BaseRouteState {
   }
 
   void _init() async {
+    deviceTokenSaveToLocalBase();
     var duration = Duration(seconds: 2);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       final provider = Provider.of<LocaleProvider>(context, listen: false);
