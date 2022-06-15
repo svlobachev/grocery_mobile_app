@@ -87,8 +87,7 @@ class Networking {
     return SmsResponse.fromJson(data as Map<String, dynamic>);
   }
 
-  Future<HttpResponse> getAccountToken(
-      String phone, int code, String deviceToken) {
+  Future<HttpResponse> getAccountToken(String phone, int code) {
     return _api.callApi({
       "jsonrpc": "2.0",
       "id": "1",
@@ -96,7 +95,7 @@ class Networking {
       "params": {
         "token": global.appToken,
         "phone": phone,
-        "device_token": deviceToken,
+        "device_token": global.deviceToken,
         "code": code,
       }
     }).catchError((Object obj) {

@@ -5,7 +5,7 @@ final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 var uuid = Uuid();
 final String uuidv1 = uuid.v1();
 
-void removeLocalBaseValuesForTest() async {
+void removeLocalBaseValues() async {
   // this function just for tests
   final SharedPreferences prefs = await _prefs;
   prefs.remove('device_token').then((bool success) {

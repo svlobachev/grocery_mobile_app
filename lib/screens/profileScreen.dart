@@ -282,7 +282,7 @@ class _ProfileScreenState extends BaseRouteState {
 
                     final SharedPreferences prefs = await _prefs;
                     prefs.remove('accountToken');
-
+                    prefs.remove('phone');
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => LogInScreen(

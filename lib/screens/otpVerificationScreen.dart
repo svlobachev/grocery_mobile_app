@@ -158,9 +158,9 @@ class _OtpVerificationScreenState extends BaseRouteState {
                         borderRadius: BorderRadius.circular(5.0),
                         border: Border.all(color: Colors.transparent),
                       ),
-                      // onSubmit: (value) {
-                      //   _pinPutFildOnPressed();
-                      // },
+                      onSubmit: (value) {
+                        _pinPutFildOnPressed();
+                      },
                     ),
                   ),
                   Container(
@@ -225,11 +225,8 @@ class _OtpVerificationScreenState extends BaseRouteState {
   }
 
   _pinPutFildOnPressed() {
-    print("Pressd _pinPutFildOnPressed");
     int code = int.parse(_pinPutController.text);
-    Networking.instance
-        .getAccountToken(phone, code, global.deviceToken)
-        .then((value) async {
+    Networking.instance.getAccountToken(phone, code).then((value) async {
       SmsResponse data;
 
       if (value != null) {
@@ -237,7 +234,7 @@ class _OtpVerificationScreenState extends BaseRouteState {
       } else {
         return;
       }
-
+      print("Pressd _pinPutFildOnPressed");
       global.accountToken = data.result.accountToken;
 
       if (global.accountToken != null) {
