@@ -3,7 +3,6 @@ import 'package:grocery_mobile_app/dto/config.dart';
 import 'package:grocery_mobile_app/dto/account_token.dart';
 import 'package:grocery_mobile_app/dto/guest.dart';
 import 'package:grocery_mobile_app/networking/api_data/get_data_from_load.dart';
-import 'package:grocery_mobile_app/services/save_values_to_local_base.dart';
 import 'package:logger/logger.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:grocery_mobile_app/models/businessLayer/global.dart' as global;
@@ -80,11 +79,10 @@ class Networking {
     var data = (await _api.callApi({
       "jsonrpc": "2.0",
       "method": "RemarkedLoyaltyApi.GetSmsCode",
-      "params": {"token": global.appToken, "phone": '7' + phone},
+      "params": {"token": global.appToken, "phone": phone},
       "id": 1
     }))
         .data;
-    savePhoneToLocalBase('7' + phone);
     return SmsResponse.fromJson(data as Map<String, dynamic>);
   }
 

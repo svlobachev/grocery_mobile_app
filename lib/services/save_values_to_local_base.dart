@@ -17,6 +17,9 @@ void removeLocalBaseValues() async {
   prefs.remove('phone').then((bool success) {
     print("phone_removed");
   });
+  prefs.remove('smsCode').then((bool success) {
+    print("smsCode_removed");
+  });
 }
 
 Future<void> deviceTokenSaveToLocalBase() async {
@@ -32,10 +35,11 @@ Future<void> deviceTokenSaveToLocalBase() async {
 Future<void> savePhoneToLocalBase(String phone) async {
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   final SharedPreferences prefs = await _prefs;
-
-  await prefs.setString('phone', phone).then((bool success) {
-    // print("funcSetPhone --> $phone");
-  });
+  if (prefs.getString('phone') == null) {
+    await prefs.setString('phone', '7$phone').then((bool success) {
+      print('funcSetPhone --> 7$phone');
+    });
+  }
 }
 
 Future<void> saveSmsCodeToLocalBase(int smsCode) async {

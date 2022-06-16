@@ -7,6 +7,7 @@ import 'package:grocery_mobile_app/networking/networking.dart';
 import 'package:grocery_mobile_app/screens/otpVerificationScreen.dart';
 import 'package:grocery_mobile_app/services/save_values_to_local_base.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LogInScreen extends BaseRoute {
   LogInScreen({a, o}) : super(a: a, o: o, r: 'LogInScreen');
@@ -16,6 +17,9 @@ class LogInScreen extends BaseRoute {
 }
 
 class _LogInScreenState extends BaseRouteState {
+  final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
+  String phone;
+
   _LogInScreenState() : super();
   FocusNode _myFocusNode = FocusNode();
   TextEditingController _phoneController = TextEditingController();
@@ -202,15 +206,16 @@ class _LogInScreenState extends BaseRouteState {
     );
   }
 
-  _textFildOnPressed() {
-    Networking.instance.sendSmsCode(_phoneController.text).then((value) {
+  _textFildOnPressed() async {
+    savePhoneToLocalBase(_phoneController.text);
+    SharedPreferences prefs = await _prefs;
+    phone = prefs.getString('phone');
+    Networking.instance.sendSmsCode(phone).then((value) {
       saveSmsCodeToLocalBase(value.result.code);
-      savePhoneToLocalBase('7' + _phoneController.text);
+
       Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => OtpVerificationScreen(
-              '7' + _phoneController.text,
-              a: widget.analytics,
-              o: widget.observer)));
+          builder: (context) => OtpVerificationScreen(phone,
+              a: widget.analytics, o: widget.observer)));
     });
   }
 

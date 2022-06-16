@@ -232,6 +232,8 @@ class _OtpVerificationScreenState extends BaseRouteState {
     phone = prefs.getString('phone');
     int code = int.parse(_pinPutController.text);
 
+    print("Pressd _pinPutFildOnPressed");
+
     smsCode != code.toString()
         ? {
             CustomSnackBar(
@@ -254,6 +256,7 @@ class _OtpVerificationScreenState extends BaseRouteState {
                     }
                   : {
                       print("Ответ запроса на верификация смс кода пустой"),
+                      print(phone + " " + code.toString())
                     };
 
               global.accountToken = data.result.accountToken;
