@@ -122,9 +122,7 @@ class Networking {
         "email": email,
         "gender": gender,
         "birthday": birthday,
-        "code": code,
         "token": global.appToken,
-        "device_token": global.deviceToken,
         "account_token": global.accountToken
       },
       "id": "1"

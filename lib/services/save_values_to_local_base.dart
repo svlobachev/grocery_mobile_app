@@ -46,6 +46,6 @@ Future<void> saveSmsCodeToLocalBase(int smsCode) async {
   final SharedPreferences prefs = await _prefs;
 
   await prefs.setString('smsCode', smsCode.toString()).then((bool success) {
-    print("funcSetsmsCode --> $smsCode");
+    print("funcSetSmsCode --> $smsCode");
   });
 }
