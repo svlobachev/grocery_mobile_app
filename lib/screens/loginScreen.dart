@@ -5,6 +5,7 @@ import 'package:grocery_mobile_app/models/businessLayer/baseRoute.dart';
 import 'package:grocery_mobile_app/models/businessLayer/global.dart' as global;
 import 'package:grocery_mobile_app/networking/networking.dart';
 import 'package:grocery_mobile_app/screens/otpVerificationScreen.dart';
+import 'package:grocery_mobile_app/services/save_values_to_local_base.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class LogInScreen extends BaseRoute {
@@ -203,7 +204,8 @@ class _LogInScreenState extends BaseRouteState {
 
   _textFildOnPressed() {
     Networking.instance.sendSmsCode(_phoneController.text).then((value) {
-      print(value.result.code);
+      saveSmsCodeToLocalBase(value.result.code);
+      savePhoneToLocalBase('7' + _phoneController.text);
       Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => OtpVerificationScreen(
               '7' + _phoneController.text,

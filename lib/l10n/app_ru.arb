@@ -1,4 +1,6 @@
 {
+    "undo": "закрыть",
+    "sms_verification_txt": "Неверный код.",
     "gender_select_male": "Мужской",
     "gender_select_female": "Женский",
     "gender_select_not_selected": "Не выбрано",

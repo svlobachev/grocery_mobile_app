@@ -1,4 +1,6 @@
 {
+    "undo": "undo",
+    "sms_verification_txt": "Incorrect code",
     "gender_select_male": "Male",
     "gender_select_female": "Female",
     "gender_select_not_selected": "Not selected",

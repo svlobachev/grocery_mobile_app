@@ -20,6 +20,7 @@ abstract class Api {
 
 class Networking {
   GetDataFromLoad getDataFromLoad = GetDataFromLoad();
+
   static final instance = Networking._();
 
   Api _api;

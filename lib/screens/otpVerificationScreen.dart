@@ -5,6 +5,7 @@ import 'package:grocery_mobile_app/models/businessLayer/baseRoute.dart';
 import 'package:grocery_mobile_app/networking/networking.dart';
 import 'package:grocery_mobile_app/screens/profileEditScreen.dart';
 import 'package:grocery_mobile_app/widgets/bottomNavigationWidget.dart';
+import 'package:grocery_mobile_app/widgets/custom_snackBar.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:pinput/pin_put/pin_put.dart';
 import 'package:grocery_mobile_app/models/businessLayer/global.dart' as global;
@@ -26,6 +27,7 @@ class OtpVerificationScreen extends BaseRoute {
 class _OtpVerificationScreenState extends BaseRouteState {
   String phone;
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
+
   final FocusNode _pinPutFocusNode = FocusNode();
   final TextEditingController _pinPutController = TextEditingController();
   String _errorMessage;
@@ -224,52 +226,73 @@ class _OtpVerificationScreenState extends BaseRouteState {
     ));
   }
 
-  _pinPutFildOnPressed() {
+  _pinPutFildOnPressed() async {
+    final SharedPreferences prefs = await _prefs;
+    String smsCode = prefs.getString('smsCode');
+    phone = prefs.getString('phone');
     int code = int.parse(_pinPutController.text);
-    Networking.instance.getAccountToken(phone, code).then((value) async {
-      SmsResponse data;
 
-      if (value != null) {
-        data = SmsResponse.fromJson(value.data as Map<String, dynamic>);
-      } else {
-        return;
-      }
-      print("Pressd _pinPutFildOnPressed");
-      global.accountToken = data.result.accountToken;
+    smsCode != code.toString()
+        ? {
+            CustomSnackBar(
+                context,
+                Text(AppLocalizations.of(context).sms_verification_txt),
+                Theme.of(context).canvasColor)
+          }
+        : {
+            Networking.instance
+                .getAccountToken(phone, code)
+                .then((value) async {
+              SmsResponse data;
+              print(phone + " " + code.toString());
 
-      if (global.accountToken != null) {
-        final SharedPreferences prefs = await _prefs;
-        prefs.setString('accountToken', global.accountToken);
+              value != null
+                  ? {
+                      data = SmsResponse.fromJson(
+                          value.data as Map<String, dynamic>),
+                      print(data),
+                    }
+                  : {
+                      print("Ответ запроса на верификация смс кода пустой"),
+                    };
 
-        await Networking.instance.getGuestData().then((value) {
-          global.currentUser = value.result;
-        });
+              global.accountToken = data.result.accountToken;
 
-        Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => BottomNavigationWidget(
-                a: widget.analytics, o: widget.observer)));
-      } else {
-        Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => ProfileEditScreen(
-                a: widget.analytics,
-                o: widget.observer,
-                phone: phone,
-                code: code)));
-      }
-    }).catchError((err) {
-      switch (err.runtimeType) {
-        case DioError:
-          final res = (err as DioError).response;
+              if (global.accountToken != null) {
+                final SharedPreferences prefs = await _prefs;
+                prefs.setString('accountToken', global.accountToken);
 
-          setState(() {
-            _errorMessage = ErrorEntity.fromJson(res.data['error']).message;
-          });
+                await Networking.instance.getGuestData().then((value) {
+                  global.currentUser = value.result;
+                });
 
-          break;
-        default:
-          break;
-      }
-    });
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => BottomNavigationWidget(
+                        a: widget.analytics, o: widget.observer)));
+              } else {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ProfileEditScreen(
+                        a: widget.analytics,
+                        o: widget.observer,
+                        phone: phone,
+                        code: code)));
+              }
+            }).catchError((err) {
+              switch (err.runtimeType) {
+                case DioError:
+                  final res = (err as DioError).response;
+
+                  setState(() {
+                    _errorMessage =
+                        ErrorEntity.fromJson(res.data['error']).message;
+                  });
+
+                  break;
+                default:
+                  break;
+              }
+            }),
+          };
   }
 
   @override

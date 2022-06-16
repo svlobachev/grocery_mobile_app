@@ -30,9 +30,18 @@ Future<void> deviceTokenSaveToLocalBase() async {
 }
 
 Future<void> savePhoneToLocalBase(String phone) async {
+  final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
   final SharedPreferences prefs = await _prefs;
 
   await prefs.setString('phone', phone).then((bool success) {
     // print("funcSetPhone --> $phone");
+  });
+}
+
+Future<void> saveSmsCodeToLocalBase(int smsCode) async {
+  final SharedPreferences prefs = await _prefs;
+
+  await prefs.setString('smsCode', smsCode.toString()).then((bool success) {
+    print("funcSetsmsCode --> $smsCode");
   });
 }
