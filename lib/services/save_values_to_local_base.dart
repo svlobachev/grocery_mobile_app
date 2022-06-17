@@ -10,8 +10,11 @@ void removeLocalBaseValues() async {
   final SharedPreferences prefs = await _prefs;
 
   // prefs.remove('device_token').then((bool success) {
-  //   print("device_token_removed");
+  //   if (kDebugMode) {
+  //     print("device_token_removed");
+  //   }
   // });
+
   prefs.remove('accountToken').then((bool success) {
     if (kDebugMode) {
       print("accountToken_removed");
