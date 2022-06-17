@@ -69,7 +69,7 @@ class _ProfileScreenState extends BaseRouteState {
                       backgroundColor: Colors.white,
                       child: CircleAvatar(
                         radius: 53,
-                        backgroundImage: AssetImage('assets/person.jpg'),
+                        backgroundImage: AssetImage('assets/User.png'),
                       ),
                     ),
                   ),
