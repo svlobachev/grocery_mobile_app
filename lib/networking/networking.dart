@@ -112,7 +112,7 @@ class Networking {
   }
 
   Future<SmsResponse> registerAccount(String phone, String name, String email,
-      String gender, String birthday, int code) async {
+      String gender, String birthday) async {
     var data = (await _api.callApi({
       "jsonrpc": "2.0",
       "method": "RemarkedLoyaltyApi.RegisterAccount",

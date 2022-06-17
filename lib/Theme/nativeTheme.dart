@@ -31,7 +31,7 @@ var customizedTheme = ThemeData(
         fontFamily: 'PoppinsMedium'), // homescreen explore all
     headline2: TextStyle(
         fontSize: 12,
-        color: Color(0xFF9EA5A8),
+        color: Color(0xFFFDFDFD),
         fontWeight: FontWeight.w400,
         fontFamily: 'PoppinsRegular'),
     //  headline2: TextStyle(fontSize: 13, color: Colors.white30), //home subtitle

@@ -7,10 +7,17 @@ class AccountToken {
   @JsonKey(name: 'code')
   int code;
 
+  @JsonKey(name: 'guest_id')
+  int guest_id;
+
   @JsonKey(name: 'account_token')
   String accountToken;
 
-  AccountToken({this.code, this.accountToken});
+  AccountToken({
+    this.code,
+    this.accountToken,
+    this.guest_id,
+  });
 
   factory AccountToken.fromJson(Map<String, dynamic> json) =>
       _$AccountTokenFromJson(json);

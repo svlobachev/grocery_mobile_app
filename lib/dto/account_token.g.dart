@@ -10,6 +10,7 @@ AccountToken _$AccountTokenFromJson(Map<String, dynamic> json) {
   return AccountToken(
     code: json['code'] as int,
     accountToken: json['account_token'] as String,
+    guest_id: json['guest_id'] as int,
   );
 }
 
@@ -17,6 +18,7 @@ Map<String, dynamic> _$AccountTokenToJson(AccountToken instance) =>
     <String, dynamic>{
       'code': instance.code,
       'account_token': instance.accountToken,
+      'guest_id': instance.guest_id,
     };
 
 SmsResponse _$SmsResponseFromJson(Map<String, dynamic> json) {

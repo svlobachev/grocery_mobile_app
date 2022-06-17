@@ -3,7 +3,6 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:grocery_mobile_app/dto/guest.dart';
 import 'package:grocery_mobile_app/models/businessLayer/baseRoute.dart';
 import 'package:grocery_mobile_app/models/businessLayer/global.dart' as global;
-import 'package:grocery_mobile_app/screens/profileEditScreen.dart';
 import 'package:grocery_mobile_app/screens/splashScreen.dart';
 import 'package:grocery_mobile_app/services/save_values_to_local_base.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -96,47 +95,47 @@ class _ProfileScreenState extends BaseRouteState {
                       .copyWith(color: Colors.white),
                 ),
               ),
-              Positioned(
-                bottom: -10,
-                child: InkWell(
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(40),
-                  ),
-                  // onTap: () {
-                  //   Navigator.of(context).push(
-                  //     MaterialPageRoute(
-                  //       builder: (context) => ProfileEditScreen(
-                  //           a: widget.analytics, o: widget.observer),
-                  //     ),
-                  //   );
-                  // },
-                  child: Container(
-                    height: 40,
-                    width: 40,
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Theme.of(context).primaryColor,
-                        width: 2,
-                      ),
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(40),
-                      ),
-                      color: Theme.of(context).scaffoldBackgroundColor,
-                    ),
-                    child: IconButton(
-                      icon: Image.asset('assets/edit.png'),
-                      onPressed: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => ProfileEditScreen(
-                                a: widget.analytics, o: widget.observer),
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ),
-              ),
+              // Positioned(
+              //   bottom: -10,
+              //   child: InkWell(
+              //     borderRadius: const BorderRadius.all(
+              //       Radius.circular(40),
+              //     ),
+              //     // onTap: () {
+              //     //   Navigator.of(context).push(
+              //     //     MaterialPageRoute(
+              //     //       builder: (context) => ProfileEditScreen(
+              //     //           a: widget.analytics, o: widget.observer),
+              //     //     ),
+              //     //   );
+              //     // },
+              //     child: Container(
+              //       height: 40,
+              //       width: 40,
+              //       decoration: BoxDecoration(
+              //         border: Border.all(
+              //           color: Theme.of(context).primaryColor,
+              //           width: 2,
+              //         ),
+              //         borderRadius: const BorderRadius.all(
+              //           Radius.circular(40),
+              //         ),
+              //         color: Theme.of(context).scaffoldBackgroundColor,
+              //       ),
+              //       child: IconButton(
+              //         icon: Image.asset('assets/edit.png'),
+              //         onPressed: () {
+              //           Navigator.of(context).push(
+              //             MaterialPageRoute(
+              //               builder: (context) => ProfileEditScreen(
+              //                   a: widget.analytics, o: widget.observer),
+              //             ),
+              //           );
+              //         },
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),

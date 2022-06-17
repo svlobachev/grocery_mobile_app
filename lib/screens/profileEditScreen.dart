@@ -1,10 +1,13 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:grocery_mobile_app/models/businessLayer/baseRoute.dart';
 import 'package:grocery_mobile_app/models/businessLayer/global.dart' as global;
 import 'package:grocery_mobile_app/networking/networking.dart';
 import 'package:grocery_mobile_app/provider/gender_provider.dart';
+import 'package:grocery_mobile_app/services/save_values_to_local_base.dart';
 import 'package:grocery_mobile_app/widgets/bottomNavigationWidget.dart';
+import 'package:grocery_mobile_app/widgets/custom_snackBar.dart';
 import 'package:intl/src/intl/date_format.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -32,7 +35,7 @@ class _ProfileEditScreenState extends BaseRouteState {
   var _cBirthday = new TextEditingController();
 
   var _fName = new FocusNode();
-  var _fNameOnCard = new FocusNode();
+  // var _fNameOnCard = new FocusNode();
   var _fEmail = new FocusNode();
   var _fGender = new FocusNode();
   var _fBirthday = new FocusNode();
@@ -186,81 +189,66 @@ class _ProfileEditScreenState extends BaseRouteState {
                         style: Theme.of(context).primaryTextTheme.headline2,
                       ),
                       Container(
-                          decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(0.0))),
-                          margin: EdgeInsets.only(top: 5, bottom: 15),
-                          padding: EdgeInsets.only(),
-                          child: Consumer<SingleSelectGender>(
-                            builder: (
-                              final BuildContext context,
-                              final SingleSelectGender SingleSelectGender,
-                              final Widget child,
-                            ) {
-                              return Container(
-                                decoration: BoxDecoration(
-                                    color: Theme.of(context)
-                                        .inputDecorationTheme
-                                        .fillColor,
-                                    // color: Color(0xFF4B4F68),
-                                    borderRadius: BorderRadius.all(
-                                        Radius.circular(10.0))),
-                                margin: EdgeInsets.only(top: 5, bottom: 15),
-                                padding: EdgeInsets.only(),
-                                child: DropdownButton<String>(
-                                  iconEnabledColor:
-                                      Theme.of(context).indicatorColor,
-                                  underline: SizedBox(),
-                                  iconSize: 35.0,
-                                  dropdownColor: Theme.of(context)
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(0.0))),
+                        margin: EdgeInsets.only(top: 5, bottom: 15),
+                        padding: EdgeInsets.only(),
+                        child: Consumer<SingleSelectGender>(
+                          builder: (
+                            final BuildContext context,
+                            final SingleSelectGender SingleSelectGender,
+                            final Widget child,
+                          ) {
+                            return Container(
+                              decoration: BoxDecoration(
+                                  color: Theme.of(context)
                                       .inputDecorationTheme
                                       .fillColor,
-                                  style: Theme.of(context)
-                                      .primaryTextTheme
-                                      .bodyText1,
-                                  hint: Text(
-                                      "    ${AppLocalizations.of(context).gender_select_not_selected}",
-                                      style: Theme.of(context)
-                                          .primaryTextTheme
-                                          .bodyText1),
-                                  icon: const Icon(Icons.arrow_drop_down),
-                                  value: SingleSelectGender.selected,
-                                  onChanged: (final String newValue) {
-                                    SingleSelectGender.selected = newValue;
+                                  // color: Color(0xFF4B4F68),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10.0))),
+                              margin: EdgeInsets.only(top: 5, bottom: 15),
+                              padding: EdgeInsets.only(),
+                              child: DropdownButton<String>(
+                                focusNode: _fGender,
+                                iconEnabledColor:
+                                    Theme.of(context).indicatorColor,
+                                underline: SizedBox(),
+                                iconSize: 35.0,
+                                dropdownColor: Theme.of(context)
+                                    .inputDecorationTheme
+                                    .fillColor,
+                                style: Theme.of(context)
+                                    .primaryTextTheme
+                                    .bodyText1,
+                                hint: Text(
+                                    "    ${AppLocalizations.of(context).gender_select_not_selected}",
+                                    style: Theme.of(context)
+                                        .primaryTextTheme
+                                        .bodyText1),
+                                icon: const Icon(Icons.arrow_drop_down),
+                                value: SingleSelectGender.selected,
+                                onChanged: (final String newValue) {
+                                  SingleSelectGender.selected = newValue;
+                                  _cGender.text = newValue;
+                                },
+                                items: <String>[
+                                  "    ${AppLocalizations.of(context).gender_select_male}",
+                                  "    ${AppLocalizations.of(context).gender_select_female}",
+                                ].map<DropdownMenuItem<String>>(
+                                  (final String value) {
+                                    return DropdownMenuItem<String>(
+                                      value: value,
+                                      child: Text(value),
+                                    );
                                   },
-                                  items: <String>[
-                                    "    ${AppLocalizations.of(context).gender_select_male}",
-                                    "    ${AppLocalizations.of(context).gender_select_female}",
-                                  ].map<DropdownMenuItem<String>>(
-                                    (final String value) {
-                                      return DropdownMenuItem<String>(
-                                        value: value,
-                                        child: Text(value),
-                                      );
-                                    },
-                                  ).toList(),
-                                ),
-                              );
-                            },
-                          )
-                          // child: TextFormField(
-                          //   controller: _cGender,
-                          //   focusNode: _fGender,
-                          //   keyboardType: TextInputType.number,
-                          //   maxLength: 3,
-                          //   style: Theme.of(context).primaryTextTheme.bodyText1,
-                          //   decoration: InputDecoration(
-                          //     fillColor: global.isDarkModeEnable
-                          //         ? Theme.of(context)
-                          //             .inputDecorationTheme
-                          //             .fillColor
-                          //         : Theme.of(context).scaffoldBackgroundColor,
-                          //     counterText: '',
-                          //     contentPadding:
-                          //         EdgeInsets.only(top: 10, left: 10, right: 10),
-                          //   ),
-                          // ),
-                          ),
+                                ).toList(),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
                       Text(
                         "${AppLocalizations.of(context).lbl_edit_birthday}",
                         style: Theme.of(context).primaryTextTheme.headline2,
@@ -307,7 +295,7 @@ class _ProfileEditScreenState extends BaseRouteState {
                             child: TextFormField(
                               readOnly: true,
                               controller: _cBirthday,
-                              // focusNode: _fBirthday,
+                              focusNode: _fBirthday,
                               keyboardType: TextInputType.datetime,
                               maxLength: 1,
                               style:
@@ -354,27 +342,42 @@ class _ProfileEditScreenState extends BaseRouteState {
                 height: 50,
                 width: MediaQuery.of(context).size.width,
                 child: TextButton(
-                    onPressed: () {
-                      if (global.accountToken == null) {
-                        Networking.instance
-                            .registerAccount(phone, _cName.text, _cEmail.text,
-                                _cGender.text, _cBirthday.text, code)
-                            .then((value) async {
-                          global.accountToken = value.result.accountToken;
+                    onPressed: () async {
+                      final SharedPreferences prefs = await _prefs;
+                      phone = prefs.getString('phone');
 
-                          if (global.accountToken != null) {
-                            final SharedPreferences prefs = await _prefs;
-                            prefs.setString(
-                                'accountToken', global.accountToken);
+                      saveRegistrationDataToLocalBase(_cName.text, _cEmail.text,
+                          _cGender.text.trim(), _cBirthday.text);
 
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (context) => BottomNavigationWidget(
-                                    a: widget.analytics, o: widget.observer)));
+                      Networking.instance
+                          .registerAccount(phone, _cName.text, _cEmail.text,
+                              _cGender.text.trim(), _cBirthday.text)
+                          .then((value) {
+                        if (value.result.guest_id != null &&
+                            value.result.guest_id > 0) {
+                          CustomSnackBar(
+                              context,
+                              Text(AppLocalizations.of(context)
+                                  .registration_result_txt),
+                              Colors.lightGreen);
+                          if (kDebugMode) {
+                            print("Регистрация прошла успешно.");
                           }
-                        });
-                      } else {
-                        Navigator.of(context).pop();
-                      }
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => BottomNavigationWidget(
+                                  a: widget.analytics, o: widget.observer)));
+                        }
+                        // global.accountToken = value.result.accountToken;
+
+                        // if (global.accountToken != null) {
+                        //   final SharedPreferences prefs = await _prefs;
+                        //   prefs.setString('accountToken', global.accountToken);
+                        //
+                        //   Navigator.of(context).push(MaterialPageRoute(
+                        //       builder: (context) => BottomNavigationWidget(
+                        //           a: widget.analytics, o: widget.observer)));
+                        // }
+                      });
                     },
                     child: Text(
                         '${AppLocalizations.of(context).btn_save_update}')),

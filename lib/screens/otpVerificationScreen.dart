@@ -4,7 +4,6 @@ import 'package:grocery_mobile_app/dto/error.dart';
 import 'package:grocery_mobile_app/models/businessLayer/baseRoute.dart';
 import 'package:grocery_mobile_app/networking/networking.dart';
 import 'package:grocery_mobile_app/screens/profileEditScreen.dart';
-import 'package:grocery_mobile_app/widgets/bottomNavigationWidget.dart';
 import 'package:grocery_mobile_app/widgets/custom_snackBar.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:pinput/pin_put/pin_put.dart';
@@ -268,17 +267,15 @@ class _OtpVerificationScreenState extends BaseRouteState {
                 await Networking.instance.getGuestData().then((value) {
                   global.currentUser = value.result;
                 });
-
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => BottomNavigationWidget(
-                        a: widget.analytics, o: widget.observer)));
-              } else {
-                Navigator.of(context).push(MaterialPageRoute(
+                Navigator.of(context).push(
+                  MaterialPageRoute(
                     builder: (context) => ProfileEditScreen(
-                        a: widget.analytics,
-                        o: widget.observer,
-                        phone: phone,
-                        code: code)));
+                        a: widget.analytics, o: widget.observer),
+                  ),
+                );
+                // Navigator.of(context).push(MaterialPageRoute(
+                //     builder: (context) => BottomNavigationWidget(
+                //         a: widget.analytics, o: widget.observer)));
               }
             }).catchError((err) {
               switch (err.runtimeType) {
