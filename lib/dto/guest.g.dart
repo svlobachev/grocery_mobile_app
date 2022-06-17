@@ -33,6 +33,9 @@ Guest _$GuestFromJson(Map<String, dynamic> json) {
     bonuses: json['bonuses'] as String,
     discountPercent: json['page_name'] as String,
     category: json['category'] as String,
+    card_shortcode_img: json['card_shortcode_img'] as String,
+    card_banner_url: json['card_banner_url'] as String,
+    card_fields: json['card_fields'] as Map<String, dynamic>,
   );
 }
 
@@ -49,4 +52,7 @@ Map<String, dynamic> _$GuestToJson(Guest instance) => <String, dynamic>{
       'bonuses': instance.bonuses,
       'page_name': instance.discountPercent,
       'category': instance.category,
+      'card_shortcode_img': instance.card_shortcode_img,
+      'card_banner_url': instance.card_banner_url,
+      'card_fields': instance.card_fields,
     };

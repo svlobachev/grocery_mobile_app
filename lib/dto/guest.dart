@@ -10,7 +10,8 @@ class GuestResponse {
     this.result,
   });
 
-  factory GuestResponse.fromJson(Map<String, dynamic> json) => _$GuestResponseFromJson(json);
+  factory GuestResponse.fromJson(Map<String, dynamic> json) =>
+      _$GuestResponseFromJson(json);
   Map<String, dynamic> toJson() => _$GuestResponseToJson(this);
 }
 
@@ -34,6 +35,9 @@ class Guest {
   String discountPercent;
 
   String category;
+  String card_shortcode_img;
+  String card_banner_url;
+  Map<String, dynamic> card_fields;
 
   Guest({
     this.phone,
@@ -48,6 +52,9 @@ class Guest {
     this.bonuses,
     this.discountPercent,
     this.category,
+    this.card_shortcode_img,
+    this.card_banner_url,
+    this.card_fields,
   });
 
   factory Guest.fromJson(Map<String, dynamic> json) => _$GuestFromJson(json);

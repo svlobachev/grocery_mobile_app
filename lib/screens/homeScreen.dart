@@ -31,13 +31,7 @@ class _HomeScreenState extends BaseRouteState {
   CarouselController _carouselController;
 
   List<String> _imagesList = getDataFromLoad.getBannersUrlFromApi;
-  // List<String> _imagesList = [
-  //   'assets/Banner0.png',
-  //   'assets/Banner1.png',
-  //   'assets/Banner2.png',
-  //   'assets/Banner3.png',
-  //   'assets/Banner4.png',
-  // ];
+
   int _currentIndex = 0;
 
   List<Widget> _items() {
@@ -47,13 +41,13 @@ class _HomeScreenState extends BaseRouteState {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             image: DecorationImage(
-              // image: AssetImage(
               image: NetworkImage(
                 _imagesList[i],
               ),
             )),
       ));
     }
+
     return list;
   }
 
@@ -212,7 +206,7 @@ class _HomeScreenState extends BaseRouteState {
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(25),
                               topRight: Radius.circular(25)),
-                          child: Image.network(config.defaultConfig.logoUrl,
+                          child: Image.network(guest.card_banner_url,
                               width: MediaQuery.of(context).size.width * 0.8),
                         ),
                       ),
@@ -236,13 +230,17 @@ class _HomeScreenState extends BaseRouteState {
                               child: Column(
                                 children: [
                                   Text(
-                                    'Скидка',
+                                    guest.card_fields['top']['left']['name'] !=
+                                            ''
+                                        ? guest.card_fields['top']['left']
+                                            ['name']
+                                        : '',
                                     style: Theme.of(context)
                                         .primaryTextTheme
                                         .bodyText1,
                                   ),
                                   Text(
-                                    '${guest.discountPercent != null ? guest.discountPercent : 0}%',
+                                    '${guest.card_fields['top']['left']['value'] != '' ? guest.card_fields['top']['left']['value'] : ''}',
                                     style: Theme.of(context)
                                         .primaryTextTheme
                                         .bodyText1,
@@ -256,13 +254,17 @@ class _HomeScreenState extends BaseRouteState {
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                   Text(
-                                    'Уровень',
+                                    guest.card_fields['top']['right']['name'] !=
+                                            ''
+                                        ? guest.card_fields['top']['right']
+                                            ['name']
+                                        : '',
                                     style: Theme.of(context)
                                         .primaryTextTheme
                                         .bodyText1,
                                   ),
                                   Text(
-                                    guest.category,
+                                    '${guest.card_fields['top']['right']['value'] != '' ? guest.card_fields['top']['right']['value'] : ''}',
                                     style: Theme.of(context)
                                         .primaryTextTheme
                                         .bodyText1,
@@ -282,8 +284,8 @@ class _HomeScreenState extends BaseRouteState {
                         margin: const EdgeInsets.symmetric(vertical: 15),
                         child: Column(
                           children: [
-                            Image.asset(
-                              'assets/barcode.png',
+                            Image.network(
+                              guest.card_shortcode_img,
                               height: 50,
                               width: MediaQuery.of(context).size.width * 0.5,
                             ),

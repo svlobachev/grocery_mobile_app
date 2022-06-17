@@ -42,24 +42,6 @@ class Networking {
       "params": {"token": global.appToken, "file": true}
     }).then((value) {
       getDataFromLoad.setValue = value;
-
-      // var pages = (value.data['result']['data']['basic']['pages'] as List);
-      // List<PageConfig> pageBlocks = [];
-      //
-      // for (int i = 0; i < pages.length; i++) {
-      //   if ((value.data['result']['data'][pages[i]]) is Map) {
-      //     if (value.data['result']['data'][pages[i]]['active'] != null &&
-      //         value.data['result']['data'][pages[i]]['active'] == true) {
-      //       var dsa =
-      //           PageConfig.fromJson(value.data['result']['data'][pages[i]]);
-      //       dsa.key = pages[i];
-      //
-      //       pageBlocks.add(dsa);
-      //     }
-      //   }
-      // }
-      // global.pageBlocks = pageBlocks;
-
       return MainConfig.fromJson(value.data);
     }).catchError((Object obj) {
       // non-200 error goes here.
