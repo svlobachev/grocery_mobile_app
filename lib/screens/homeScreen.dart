@@ -8,7 +8,6 @@ import 'package:grocery_mobile_app/models/businessLayer/baseRoute.dart';
 import 'package:grocery_mobile_app/models/businessLayer/global.dart' as global;
 import 'package:grocery_mobile_app/networking/api_data/get_data_from_load.dart';
 import 'package:grocery_mobile_app/services/config_service.dart';
-import 'package:grocery_mobile_app/services/refresh_service.dart';
 
 import 'notificationScreen.dart';
 import 'offerScreen.dart';
@@ -23,7 +22,7 @@ class HomeScreen extends BaseRoute {
 }
 
 class _HomeScreenState extends BaseRouteState {
-  OnRefresh onRefresh = OnRefresh();
+  // OnRefresh onRefresh = OnRefresh();
   Config config = ConfigService.instance.config;
 
   Guest guest;

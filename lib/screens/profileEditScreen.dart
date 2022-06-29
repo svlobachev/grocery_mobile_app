@@ -35,6 +35,7 @@ class _ProfileEditScreenState extends BaseRouteState {
   var _cBirthday = new TextEditingController();
 
   var _fName = new FocusNode();
+
   // var _fNameOnCard = new FocusNode();
   var _fEmail = new FocusNode();
   var _fGender = new FocusNode();
@@ -194,10 +195,10 @@ class _ProfileEditScreenState extends BaseRouteState {
                                 BorderRadius.all(Radius.circular(0.0))),
                         margin: EdgeInsets.only(top: 5, bottom: 15),
                         padding: EdgeInsets.only(),
-                        child: Consumer<SingleSelectGender>(
+                        child: Consumer<GenderProvider>(
                           builder: (
                             final BuildContext context,
-                            final SingleSelectGender SingleSelectGender,
+                            GenderProvider genderProvider,
                             final Widget child,
                           ) {
                             return Container(
@@ -228,10 +229,13 @@ class _ProfileEditScreenState extends BaseRouteState {
                                         .primaryTextTheme
                                         .bodyText1),
                                 icon: const Icon(Icons.arrow_drop_down),
-                                value: SingleSelectGender.selected,
+                                value: genderProvider.selected,
                                 onChanged: (final String newValue) {
-                                  SingleSelectGender.selected = newValue;
+                                  genderProvider.selected = newValue;
                                   _cGender.text = newValue;
+                                  if (kDebugMode) {
+                                    print("selected --> ${newValue.trim()}");
+                                  }
                                 },
                                 items: <String>[
                                   "    ${AppLocalizations.of(context).gender_select_male}",

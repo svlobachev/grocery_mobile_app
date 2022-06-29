@@ -55,9 +55,9 @@ class MyAppState extends State<MyApp> {
   Widget build(BuildContext context) => MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (context) => LocaleProvider()),
-          ChangeNotifierProvider<SingleSelectGender>(
+          ChangeNotifierProvider<GenderProvider>(
             create: (final BuildContext context) {
-              return SingleSelectGender();
+              return GenderProvider();
             },
           ),
           ChangeNotifierProvider(
